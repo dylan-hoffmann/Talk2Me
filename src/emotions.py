@@ -55,4 +55,4 @@ def get_sentiment(line):
 
 
 
-get_sentiment(sys.argv[1])
+#get_sentiment(sys.argv[1])
