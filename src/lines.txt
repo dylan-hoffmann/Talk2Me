@@ -1,0 +1,2114 @@
+BARNARDO. says  Who’s there?
+
+FRANCISCO. says  Nay, answer me. Stand and unfold yourself.
+
+BARNARDO. says  Long live the King!
+
+FRANCISCO. says  Barnardo?
+
+BARNARDO. says  He.
+
+FRANCISCO. says  You come most carefully upon your hour.
+
+BARNARDO. says  ’Tis now struck twelve. Get thee to bed, Francisco.
+
+FRANCISCO. says  For this relief much thanks. ’Tis bitter cold, And I am sick
+
+BARNARDO. says  Have you had quiet guard?
+
+FRANCISCO. says  Not a mouse stirring.
+
+BARNARDO. says  Well, good night. If you do meet Horatio and Marcellus, The
+
+FRANCISCO. says  I think I hear them. Stand, ho! Who is there?
+
+HORATIO. says  Friends to this ground.
+
+MARCELLUS. says  And liegemen to the Dane.
+
+FRANCISCO. says  Give you good night.
+
+MARCELLUS. says  O, farewell, honest soldier, who hath reliev’d you?
+
+FRANCISCO. says  Barnardo has my place. Give you good-night.
+
+MARCELLUS. says  Holla, Barnardo!
+
+BARNARDO. says  Say, what, is Horatio there?
+
+HORATIO. says  A piece of him.
+
+BARNARDO. says  Welcome, Horatio. Welcome, good Marcellus.
+
+MARCELLUS. says  What, has this thing appear’d again tonight?
+
+BARNARDO. says  I have seen nothing.
+
+MARCELLUS. says  Horatio says ’tis but our fantasy, And will not let belief
+
+HORATIO. says  Tush, tush, ’twill not appear.
+
+BARNARDO. says  Sit down awhile, And let us once again assail your ears, That
+
+HORATIO. says  Well, sit we down, And let us hear Barnardo speak of this.
+
+BARNARDO. says  Last night of all, When yond same star that’s westward from
+
+MARCELLUS. says  Peace, break thee off. Look where it comes again.
+
+BARNARDO. says  In the same figure, like the King that’s dead.
+
+MARCELLUS. says  Thou art a scholar; speak to it, Horatio.
+
+BARNARDO. says  Looks it not like the King? Mark it, Horatio.
+
+HORATIO. says  Most like. It harrows me with fear and wonder.
+
+MARCELLUS. says  Question it, Horatio.
+
+HORATIO. says  What art thou that usurp’st this time of night, Together with
+
+MARCELLUS. says  It is offended.
+
+BARNARDO. says  See, it stalks away.
+
+HORATIO. says  Stay! speak, speak! I charge thee speak!
+
+MARCELLUS. says  ’Tis gone, and will not answer.
+
+BARNARDO. says  How now, Horatio! You tremble and look pale. Is not this
+
+HORATIO. says  Before my God, I might not this believe Without the sensible
+
+MARCELLUS. says  Is it not like the King?
+
+HORATIO. says  As thou art to thyself: Such was the very armour he had on
+
+MARCELLUS. says  Thus twice before, and jump at this dead hour, With martial
+
+HORATIO. says  In what particular thought to work I know not; But in the
+
+MARCELLUS. says  Good now, sit down, and tell me, he that knows, Why this
+
+HORATIO. says  That can I; At least, the whisper goes so. Our last King,
+
+BARNARDO. says  I think it be no other but e’en so: Well may it sort that
+
+HORATIO. says  A mote it is to trouble the mind’s eye. In the most high and
+
+MARCELLUS. says  Shall I strike at it with my partisan?
+
+HORATIO. says  Do, if it will not stand.
+
+BARNARDO. says  ’Tis here!
+
+HORATIO. says  ’Tis here!
+
+MARCELLUS. says  ’Tis gone! We do it wrong, being so majestical, To offer it
+
+BARNARDO. says  It was about to speak, when the cock crew.
+
+HORATIO. says  And then it started, like a guilty thing Upon a fearful
+
+MARCELLUS. says  It faded on the crowing of the cock. Some say that ever
+
+HORATIO. says  So have I heard, and do in part believe it. But look, the morn
+
+MARCELLUS. says  Let’s do’t, I pray, and I this morning know Where we shall
+
+KING. says  Though yet of Hamlet our dear brother’s death The memory be
+
+CORNELIUS and VOLTEMAND. says  In that, and all things, will we show our
+
+KING. says  We doubt it nothing: heartily farewell.
+
+LAERTES. says  Dread my lord, Your leave and favour to return to France, From
+
+KING. says  Have you your father’s leave? What says Polonius?
+
+POLONIUS. says  He hath, my lord, wrung from me my slow leave By laboursome
+
+KING. says  Take thy fair hour, Laertes; time be thine, And thy best graces
+
+HAMLET. says  [_Aside._] A little more than kin, and less than kind.
+
+KING. says  How is it that the clouds still hang on you?
+
+HAMLET. says  Not so, my lord, I am too much i’ the sun.
+
+QUEEN. says  Good Hamlet, cast thy nighted colour off, And let thine eye look
+
+HAMLET. says  Ay, madam, it is common.
+
+QUEEN. says  If it be, Why seems it so particular with thee?
+
+HAMLET. says  Seems, madam! Nay, it is; I know not seems. ’Tis not alone my
+
+KING. says  ’Tis sweet and commendable in your nature, Hamlet, To give these
+
+QUEEN. says  Let not thy mother lose her prayers, Hamlet. I pray thee stay
+
+HAMLET. says  I shall in all my best obey you, madam.
+
+KING. says  Why, ’tis a loving and a fair reply. Be as ourself in Denmark.
+
+HAMLET. says  O that this too too solid flesh would melt, Thaw, and resolve
+
+HORATIO. says  Hail to your lordship!
+
+HAMLET. says  I am glad to see you well: Horatio, or I do forget myself.
+
+HORATIO. says  The same, my lord, And your poor servant ever.
+
+HAMLET. says  Sir, my good friend; I’ll change that name with you: And what
+
+MARCELLUS. says  My good lord.
+
+HAMLET. says  I am very glad to see you.—Good even, sir.— But what, in faith,
+
+HORATIO. says  A truant disposition, good my lord.
+
+HAMLET. says  I would not hear your enemy say so; Nor shall you do my ear
+
+HORATIO. says  My lord, I came to see your father’s funeral.
+
+HAMLET. says  I prithee do not mock me, fellow-student. I think it was to see
+
+HORATIO. says  Indeed, my lord, it follow’d hard upon.
+
+HAMLET. says  Thrift, thrift, Horatio! The funeral bak’d meats Did coldly
+
+HORATIO. says  Where, my lord?
+
+HAMLET. says  In my mind’s eye, Horatio.
+
+HORATIO. says  I saw him once; he was a goodly king.
+
+HAMLET. says  He was a man, take him for all in all, I shall not look upon
+
+HORATIO. says  My lord, I think I saw him yesternight.
+
+HAMLET. says  Saw? Who?
+
+HORATIO. says  My lord, the King your father.
+
+HAMLET. says  The King my father!
+
+HORATIO. says  Season your admiration for a while With an attent ear, till I
+
+HAMLET. says  For God’s love let me hear.
+
+HORATIO. says  Two nights together had these gentlemen, Marcellus and
+
+HAMLET. says  But where was this?
+
+MARCELLUS. says  My lord, upon the platform where we watch.
+
+HAMLET. says  Did you not speak to it?
+
+HORATIO. says  My lord, I did; But answer made it none: yet once methought It
+
+HAMLET. says  ’Tis very strange.
+
+HORATIO. says  As I do live, my honour’d lord, ’tis true; And we did think it
+
+HAMLET. says  Indeed, indeed, sirs, but this troubles me. Hold you the watch
+
+Mar. and BARNARDO. says  We do, my lord.
+
+HAMLET. says  Arm’d, say you?
+
+HAMLET. says  From top to toe?
+
+HAMLET. says  Then saw you not his face?
+
+HORATIO. says  O yes, my lord, he wore his beaver up.
+
+HAMLET. says  What, look’d he frowningly?
+
+HORATIO. says  A countenance more in sorrow than in anger.
+
+HAMLET. says  Pale, or red?
+
+HORATIO. says  Nay, very pale.
+
+HAMLET. says  And fix’d his eyes upon you?
+
+HORATIO. says  Most constantly.
+
+HAMLET. says  I would I had been there.
+
+HORATIO. says  It would have much amaz’d you.
+
+HAMLET. says  Very like, very like. Stay’d it long?
+
+HORATIO. says  While one with moderate haste might tell a hundred.
+
+MARCELLUS and BARNARDO. says  Longer, longer.
+
+HORATIO. says  Not when I saw’t.
+
+HAMLET. says  His beard was grizzled, no?
+
+HORATIO. says  It was, as I have seen it in his life, A sable silver’d.
+
+HAMLET. says  I will watch tonight; Perchance ’twill walk again.
+
+HORATIO. says  I warrant you it will.
+
+HAMLET. says  If it assume my noble father’s person, I’ll speak to it, though
+
+HAMLET. says  Your loves, as mine to you: farewell.
+
+LAERTES. says  My necessaries are embark’d. Farewell. And, sister, as the
+
+OPHELIA. says  Do you doubt that?
+
+LAERTES. says  For Hamlet, and the trifling of his favour, Hold it a fashion
+
+OPHELIA. says  No more but so?
+
+LAERTES. says  Think it no more. For nature crescent does not grow alone In
+
+OPHELIA. says  I shall th’effect of this good lesson keep As watchman to my
+
+LAERTES. says  O, fear me not. I stay too long. But here my father comes.
+
+POLONIUS. says  Yet here, Laertes? Aboard, aboard, for shame. The wind sits
+
+LAERTES. says  Most humbly do I take my leave, my lord.
+
+POLONIUS. says  The time invites you; go, your servants tend.
+
+LAERTES. says  Farewell, Ophelia, and remember well What I have said to you.
+
+OPHELIA. says  ’Tis in my memory lock’d, And you yourself shall keep the key
+
+LAERTES. says  Farewell.
+
+POLONIUS. says  What is’t, Ophelia, he hath said to you?
+
+OPHELIA. says  So please you, something touching the Lord Hamlet.
+
+POLONIUS. says  Marry, well bethought: ’Tis told me he hath very oft of late
+
+OPHELIA. says  He hath, my lord, of late made many tenders Of his affection
+
+POLONIUS. says  Affection! Pooh! You speak like a green girl, Unsifted in
+
+OPHELIA. says  I do not know, my lord, what I should think.
+
+POLONIUS. says  Marry, I’ll teach you; think yourself a baby; That you have
+
+OPHELIA. says  My lord, he hath importun’d me with love In honourable
+
+POLONIUS. says  Ay, fashion you may call it; go to, go to.
+
+OPHELIA. says  And hath given countenance to his speech, my lord, With almost
+
+POLONIUS. says  Ay, springes to catch woodcocks. I do know, When the blood
+
+OPHELIA. says  I shall obey, my lord.
+
+HAMLET. says  The air bites shrewdly; it is very cold.
+
+HORATIO. says  It is a nipping and an eager air.
+
+HAMLET. says  What hour now?
+
+HORATIO. says  I think it lacks of twelve.
+
+MARCELLUS. says  No, it is struck.
+
+HORATIO. says  Indeed? I heard it not. It then draws near the season Wherein
+
+HAMLET. says  The King doth wake tonight and takes his rouse, Keeps wassail,
+
+HORATIO. says  Is it a custom?
+
+HAMLET. says  Ay marry is’t; And to my mind, though I am native here, And to
+
+HORATIO. says  Look, my lord, it comes!
+
+HAMLET. says  Angels and ministers of grace defend us! Be thou a spirit of
+
+HORATIO. says  It beckons you to go away with it, As if it some impartment
+
+MARCELLUS. says  Look with what courteous action It waves you to a more
+
+HORATIO. says  No, by no means.
+
+HAMLET. says  It will not speak; then will I follow it.
+
+HORATIO. says  Do not, my lord.
+
+HAMLET. says  Why, what should be the fear? I do not set my life at a pin’s
+
+HORATIO. says  What if it tempt you toward the flood, my lord, Or to the
+
+HAMLET. says  It waves me still. Go on, I’ll follow thee.
+
+MARCELLUS. says  You shall not go, my lord.
+
+HAMLET. says  Hold off your hands.
+
+HORATIO. says  Be rul’d; you shall not go.
+
+HAMLET. says  My fate cries out, And makes each petty artery in this body As
+
+HORATIO. says  He waxes desperate with imagination.
+
+MARCELLUS. says  Let’s follow; ’tis not fit thus to obey him.
+
+HORATIO. says  Have after. To what issue will this come?
+
+MARCELLUS. says  Something is rotten in the state of Denmark.
+
+HORATIO. says  Heaven will direct it.
+
+MARCELLUS. says  Nay, let’s follow him.
+
+HAMLET. says  Whither wilt thou lead me? Speak, I’ll go no further.
+
+GHOST. says  Mark me.
+
+HAMLET. says  I will.
+
+GHOST. says  My hour is almost come, When I to sulph’rous and tormenting
+
+HAMLET. says  Alas, poor ghost!
+
+GHOST. says  Pity me not, but lend thy serious hearing To what I shall
+
+HAMLET. says  Speak, I am bound to hear.
+
+GHOST. says  So art thou to revenge, when thou shalt hear.
+
+HAMLET. says  What?
+
+GHOST. says  I am thy father’s spirit, Doom’d for a certain term to walk the
+
+HAMLET. says  O God!
+
+GHOST. says  Revenge his foul and most unnatural murder.
+
+HAMLET. says  Murder!
+
+GHOST. says  Murder most foul, as in the best it is; But this most foul,
+
+HAMLET. says  Haste me to know’t, that I, with wings as swift As meditation
+
+GHOST. says  I find thee apt; And duller shouldst thou be than the fat weed
+
+HAMLET. says  O my prophetic soul! Mine uncle!
+
+GHOST. says  Ay, that incestuous, that adulterate beast, With witchcraft of
+
+HAMLET. says  O all you host of heaven! O earth! What else? And shall I
+
+HORATIO and MARCELLUS. says  [_Within._] My lord, my lord.
+
+MARCELLUS. says  [_Within._] Lord Hamlet.
+
+HORATIO. says  [_Within._] Heaven secure him.
+
+HAMLET. says  So be it!
+
+MARCELLUS. says  [_Within._] Illo, ho, ho, my lord!
+
+HAMLET. says  Hillo, ho, ho, boy! Come, bird, come.
+
+MARCELLUS. says  How is’t, my noble lord?
+
+HORATIO. says  What news, my lord?
+
+HAMLET. says  O, wonderful!
+
+HORATIO. says  Good my lord, tell it.
+
+HAMLET. says  No, you’ll reveal it.
+
+HORATIO. says  Not I, my lord, by heaven.
+
+MARCELLUS. says  Nor I, my lord.
+
+HAMLET. says  How say you then, would heart of man once think it?— But you’ll
+
+HORATIO and MARCELLUS. says  Ay, by heaven, my lord.
+
+HAMLET. says  There’s ne’er a villain dwelling in all Denmark But he’s an
+
+HORATIO. says  There needs no ghost, my lord, come from the grave To tell us
+
+HAMLET. says  Why, right; you are i’ the right; And so, without more
+
+HORATIO. says  These are but wild and whirling words, my lord.
+
+HAMLET. says  I’m sorry they offend you, heartily; Yes faith, heartily.
+
+HORATIO. says  There’s no offence, my lord.
+
+HAMLET. says  Yes, by Saint Patrick, but there is, Horatio, And much offence
+
+HORATIO. says  What is’t, my lord? We will.
+
+HAMLET. says  Never make known what you have seen tonight.
+
+HORATIO and MARCELLUS. says  My lord, we will not.
+
+HAMLET. says  Nay, but swear’t.
+
+HORATIO. says  In faith, my lord, not I.
+
+MARCELLUS. says  Nor I, my lord, in faith.
+
+HAMLET. says  Upon my sword.
+
+MARCELLUS. says  We have sworn, my lord, already.
+
+HAMLET. says  Indeed, upon my sword, indeed.
+
+GHOST. says  [_Cries under the stage._] Swear.
+
+HAMLET. says  Ha, ha boy, say’st thou so? Art thou there, truepenny? Come on,
+
+HORATIO. says  Propose the oath, my lord.
+
+HAMLET. says  Never to speak of this that you have seen. Swear by my sword.
+
+GHOST. says  [_Beneath._] Swear.
+
+HAMLET. says  _Hic et ubique?_ Then we’ll shift our ground. Come hither,
+
+GHOST. says  [_Beneath._] Swear.
+
+HAMLET. says  Well said, old mole! Canst work i’ th’earth so fast? A worthy
+
+HORATIO. says  O day and night, but this is wondrous strange.
+
+HAMLET. says  And therefore as a stranger give it welcome. There are more
+
+GHOST. says  [_Beneath._] Swear.
+
+HAMLET. says  Rest, rest, perturbed spirit. So, gentlemen, With all my love I
+
+POLONIUS. says  Give him this money and these notes, Reynaldo.
+
+REYNALDO. says  I will, my lord.
+
+POLONIUS. says  You shall do marvellous wisely, good Reynaldo, Before you
+
+REYNALDO. says  My lord, I did intend it.
+
+POLONIUS. says  Marry, well said; very well said. Look you, sir, Enquire me
+
+REYNALDO. says  Ay, very well, my lord.
+
+POLONIUS. says  ‘And in part him, but,’ you may say, ‘not well; But if’t be
+
+REYNALDO. says  As gaming, my lord?
+
+POLONIUS. says  Ay, or drinking, fencing, swearing, Quarrelling, drabbing.
+
+REYNALDO. says  My lord, that would dishonour him.
+
+POLONIUS. says  Faith no, as you may season it in the charge. You must not
+
+REYNALDO. says  But my good lord—
+
+POLONIUS. says  Wherefore should you do this?
+
+REYNALDO. says  Ay, my lord, I would know that.
+
+POLONIUS. says  Marry, sir, here’s my drift, And I believe it is a fetch of
+
+REYNALDO. says  Very good, my lord.
+
+POLONIUS. says  And then, sir, does he this,— He does—What was I about to
+
+REYNALDO. says  At ‘closes in the consequence.’ At ‘friend or so,’ and
+
+POLONIUS. says  At ‘closes in the consequence’ ay, marry! He closes with you
+
+REYNALDO. says  My lord, I have.
+
+POLONIUS. says  God b’ wi’ you, fare you well.
+
+REYNALDO. says  Good my lord.
+
+POLONIUS. says  Observe his inclination in yourself.
+
+REYNALDO. says  I shall, my lord.
+
+POLONIUS. says  And let him ply his music.
+
+REYNALDO. says  Well, my lord.
+
+POLONIUS. says  Farewell.
+
+OPHELIA. says  Alas, my lord, I have been so affrighted.
+
+POLONIUS. says  With what, in the name of God?
+
+OPHELIA. says  My lord, as I was sewing in my chamber, Lord Hamlet, with his
+
+POLONIUS. says  Mad for thy love?
+
+OPHELIA. says  My lord, I do not know, but truly I do fear it.
+
+POLONIUS. says  What said he?
+
+OPHELIA. says  He took me by the wrist and held me hard; Then goes he to the
+
+POLONIUS. says  Come, go with me. I will go seek the King. This is the very
+
+OPHELIA. says  No, my good lord; but as you did command, I did repel his
+
+POLONIUS. says  That hath made him mad. I am sorry that with better heed and
+
+KING. says  Welcome, dear Rosencrantz and Guildenstern. Moreover that we much
+
+QUEEN. says  Good gentlemen, he hath much talk’d of you, And sure I am, two
+
+ROSENCRANTZ. says  Both your majesties Might, by the sovereign power you have
+
+GUILDENSTERN. says  We both obey, And here give up ourselves, in the full
+
+KING. says  Thanks, Rosencrantz and gentle Guildenstern.
+
+QUEEN. says  Thanks, Guildenstern and gentle Rosencrantz. And I beseech you
+
+GUILDENSTERN. says  Heavens make our presence and our practices Pleasant and
+
+QUEEN. says  Ay, amen.
+
+POLONIUS. says  Th’ambassadors from Norway, my good lord, Are joyfully
+
+KING. says  Thou still hast been the father of good news.
+
+POLONIUS. says  Have I, my lord? Assure you, my good liege, I hold my duty,
+
+KING. says  O speak of that, that do I long to hear.
+
+POLONIUS. says  Give first admittance to th’ambassadors; My news shall be the
+
+KING. says  Thyself do grace to them, and bring them in.
+
+QUEEN. says  I doubt it is no other but the main, His father’s death and our
+
+KING. says  Well, we shall sift him.
+
+VOLTEMAND. says  Most fair return of greetings and desires. Upon our first,
+
+KING. says  It likes us well; And at our more consider’d time we’ll read,
+
+POLONIUS. says  This business is well ended. My liege and madam, to
+
+QUEEN. says  More matter, with less art.
+
+POLONIUS. says  Madam, I swear I use no art at all. That he is mad, ’tis
+
+QUEEN. says  Came this from Hamlet to her?
+
+POLONIUS. says  Good madam, stay awhile; I will be faithful. [_Reads._]
+
+whilst this machine is to him, HAMLET. says _ This in obedience hath my
+
+KING. says  But how hath she receiv’d his love?
+
+POLONIUS. says  What do you think of me?
+
+KING. says  As of a man faithful and honourable.
+
+POLONIUS. says  I would fain prove so. But what might you think, When I had
+
+KING. says  Do you think ’tis this?
+
+QUEEN. says  It may be, very likely.
+
+POLONIUS. says  Hath there been such a time, I’d fain know that, That I have
+
+KING. says  Not that I know.
+
+POLONIUS. says  Take this from this, if this be otherwise. [_Points to his
+
+KING. says  How may we try it further?
+
+POLONIUS. says  You know sometimes he walks four hours together Here in the
+
+QUEEN. says  So he does indeed.
+
+POLONIUS. says  At such a time I’ll loose my daughter to him. Be you and I
+
+KING. says  We will try it.
+
+QUEEN. says  But look where sadly the poor wretch comes reading.
+
+POLONIUS. says  Away, I do beseech you, both away I’ll board him presently.
+
+HAMLET. says  Well, God-a-mercy.
+
+POLONIUS. says  Do you know me, my lord?
+
+HAMLET. says  Excellent well. You’re a fishmonger.
+
+POLONIUS. says  Not I, my lord.
+
+HAMLET. says  Then I would you were so honest a man.
+
+POLONIUS. says  Honest, my lord?
+
+HAMLET. says  Ay sir, to be honest, as this world goes, is to be one man
+
+POLONIUS. says  That’s very true, my lord.
+
+HAMLET. says  For if the sun breed maggots in a dead dog, being a good
+
+POLONIUS. says  I have, my lord.
+
+HAMLET. says  Let her not walk i’ th’ sun. Conception is a blessing, but not
+
+POLONIUS. says  How say you by that? [_Aside._] Still harping on my daughter.
+
+HAMLET. says  Words, words, words.
+
+POLONIUS. says  What is the matter, my lord?
+
+HAMLET. says  Between who?
+
+POLONIUS. says  I mean the matter that you read, my lord.
+
+HAMLET. says  Slanders, sir. For the satirical slave says here that old men
+
+POLONIUS. says  [_Aside._] Though this be madness, yet there is a method
+
+HAMLET. says  Into my grave?
+
+POLONIUS. says  Indeed, that is out o’ the air. [_Aside._] How pregnant
+
+HAMLET. says  You cannot, sir, take from me anything that I will more
+
+POLONIUS. says  Fare you well, my lord.
+
+HAMLET. says  These tedious old fools.
+
+POLONIUS. says  You go to seek the Lord Hamlet; there he is.
+
+ROSENCRANTZ. says  [_To Polonius._] God save you, sir.
+
+GUILDENSTERN. says  My honoured lord!
+
+ROSENCRANTZ. says  My most dear lord!
+
+HAMLET. says  My excellent good friends! How dost thou, Guildenstern? Ah,
+
+ROSENCRANTZ. says  As the indifferent children of the earth.
+
+GUILDENSTERN. says  Happy in that we are not over-happy; On Fortune’s cap we
+
+HAMLET. says  Nor the soles of her shoe?
+
+ROSENCRANTZ. says  Neither, my lord.
+
+HAMLET. says  Then you live about her waist, or in the middle of her favours?
+
+GUILDENSTERN. says  Faith, her privates we.
+
+HAMLET. says  In the secret parts of Fortune? O, most true; she is a
+
+ROSENCRANTZ. says  None, my lord, but that the world’s grown honest.
+
+HAMLET. says  Then is doomsday near. But your news is not true. Let me
+
+GUILDENSTERN. says  Prison, my lord?
+
+HAMLET. says  Denmark’s a prison.
+
+ROSENCRANTZ. says  Then is the world one.
+
+HAMLET. says  A goodly one; in which there are many confines, wards, and
+
+ROSENCRANTZ. says  We think not so, my lord.
+
+HAMLET. says  Why, then ’tis none to you; for there is nothing either good or
+
+ROSENCRANTZ. says  Why, then your ambition makes it one; ’tis too narrow for
+
+HAMLET. says  O God, I could be bounded in a nutshell, and count myself a
+
+GUILDENSTERN. says  Which dreams, indeed, are ambition; for the very
+
+HAMLET. says  A dream itself is but a shadow.
+
+ROSENCRANTZ. says  Truly, and I hold ambition of so airy and light a quality
+
+HAMLET. says  Then are our beggars bodies, and our monarchs and outstretch’d
+
+ROSENCRANTZ and GUILDENSTERN. says  We’ll wait upon you.
+
+HAMLET. says  No such matter. I will not sort you with the rest of my
+
+ROSENCRANTZ. says  To visit you, my lord, no other occasion.
+
+HAMLET. says  Beggar that I am, I am even poor in thanks; but I thank you.
+
+GUILDENSTERN. says  What should we say, my lord?
+
+HAMLET. says  Why, anything. But to the purpose. You were sent for; and there
+
+ROSENCRANTZ. says  To what end, my lord?
+
+HAMLET. says  That you must teach me. But let me conjure you, by the rights
+
+ROSENCRANTZ. says  [_To Guildenstern._] What say you?
+
+HAMLET. says  [_Aside._] Nay, then I have an eye of you. If you love me, hold
+
+GUILDENSTERN. says  My lord, we were sent for.
+
+HAMLET. says  I will tell you why; so shall my anticipation prevent your
+
+ROSENCRANTZ. says  My lord, there was no such stuff in my thoughts.
+
+HAMLET. says  Why did you laugh then, when I said ‘Man delights not me’?
+
+ROSENCRANTZ. says  To think, my lord, if you delight not in man, what Lenten
+
+HAMLET. says  He that plays the king shall be welcome,—his Majesty shall have
+
+ROSENCRANTZ. says  Even those you were wont to take such delight in—the
+
+HAMLET. says  How chances it they travel? Their residence, both in reputation
+
+ROSENCRANTZ. says  I think their inhibition comes by the means of the late
+
+HAMLET. says  Do they hold the same estimation they did when I was in the
+
+ROSENCRANTZ. says  No, indeed, they are not.
+
+HAMLET. says  How comes it? Do they grow rusty?
+
+ROSENCRANTZ. says  Nay, their endeavour keeps in the wonted pace; but there
+
+HAMLET. says  What, are they children? Who maintains ’em? How are they
+
+ROSENCRANTZ. says  Faith, there has been much to do on both sides; and the
+
+HAMLET. says  Is’t possible?
+
+GUILDENSTERN. says  O, there has been much throwing about of brains.
+
+HAMLET. says  Do the boys carry it away?
+
+ROSENCRANTZ. says  Ay, that they do, my lord. Hercules and his load too.
+
+HAMLET. says  It is not very strange; for my uncle is King of Denmark, and
+
+GUILDENSTERN. says  There are the players.
+
+HAMLET. says  Gentlemen, you are welcome to Elsinore. Your hands, come. The
+
+GUILDENSTERN. says  In what, my dear lord?
+
+HAMLET. says  I am but mad north-north-west. When the wind is southerly, I
+
+POLONIUS. says  Well be with you, gentlemen.
+
+HAMLET. says  Hark you, Guildenstern, and you too, at each ear a hearer. That
+
+ROSENCRANTZ. says  Happily he’s the second time come to them; for they say an
+
+HAMLET. says  I will prophesy he comes to tell me of the players. Mark
+
+POLONIUS. says  My lord, I have news to tell you.
+
+HAMLET. says  My lord, I have news to tell you. When Roscius was an actor in
+
+POLONIUS. says  The actors are come hither, my lord.
+
+HAMLET. says  Buzz, buzz.
+
+POLONIUS. says  Upon my honour.
+
+HAMLET. says  Then came each actor on his ass—
+
+POLONIUS. says  The best actors in the world, either for tragedy, comedy,
+
+HAMLET. says  O Jephthah, judge of Israel, what a treasure hadst thou!
+
+POLONIUS. says  What treasure had he, my lord?
+
+HAMLET. says  Why— ’One fair daughter, and no more, The which he loved
+
+POLONIUS. says  [_Aside._] Still on my daughter.
+
+HAMLET. says  Am I not i’ th’ right, old Jephthah?
+
+POLONIUS. says  If you call me Jephthah, my lord, I have a daughter that I
+
+HAMLET. says  Nay, that follows not.
+
+POLONIUS. says  What follows then, my lord?
+
+HAMLET. says  Why, As by lot, God wot, and then, you know, It came to pass,
+
+HAMLET. says  I heard thee speak me a speech once, but it was never acted, or
+
+POLONIUS. says  ’Fore God, my lord, well spoken, with good accent and good
+
+POLONIUS. says  This is too long.
+
+HAMLET. says  It shall to the barber’s, with your beard.—Prythee say on. He’s
+
+HAMLET. says  ‘The mobled queen’?
+
+POLONIUS. says  That’s good! ‘Mobled queen’ is good.
+
+POLONIUS. says  Look, where he has not turn’d his colour, and has tears in’s
+
+HAMLET. says  ’Tis well. I’ll have thee speak out the rest of this soon.—Good
+
+POLONIUS. says  My lord, I will use them according to their desert.
+
+HAMLET. says  God’s bodikin, man, better. Use every man after his desert, and
+
+POLONIUS. says  Come, sirs.
+
+HAMLET. says  Follow him, friends. We’ll hear a play tomorrow.
+
+HAMLET. says  We’ll ha’t tomorrow night. You could for a need study a speech
+
+HAMLET. says  Very well. Follow that lord, and look you mock him not.
+
+ROSENCRANTZ. says  Good my lord.
+
+HAMLET. says  Ay, so, God b’ wi’ ye. Now I am alone. O what a rogue and
+
+KING. says  And can you by no drift of circumstance Get from him why he puts
+
+ROSENCRANTZ. says  He does confess he feels himself distracted, But from what
+
+GUILDENSTERN. says  Nor do we find him forward to be sounded, But with a
+
+QUEEN. says  Did he receive you well?
+
+ROSENCRANTZ. says  Most like a gentleman.
+
+GUILDENSTERN. says  But with much forcing of his disposition.
+
+ROSENCRANTZ. says  Niggard of question, but of our demands, Most free in his
+
+QUEEN. says  Did you assay him to any pastime?
+
+ROSENCRANTZ. says  Madam, it so fell out that certain players We o’er-raught
+
+POLONIUS. says  ’Tis most true; And he beseech’d me to entreat your Majesties
+
+KING. says  With all my heart; and it doth much content me To hear him so
+
+ROSENCRANTZ. says  We shall, my lord.
+
+KING. says  Sweet Gertrude, leave us too, For we have closely sent for Hamlet
+
+QUEEN. says  I shall obey you. And for your part, Ophelia, I do wish That
+
+OPHELIA. says  Madam, I wish it may.
+
+POLONIUS. says  Ophelia, walk you here.—Gracious, so please you, We will
+
+KING. says  [_Aside._] O ’tis too true! How smart a lash that speech doth
+
+POLONIUS. says  I hear him coming. Let’s withdraw, my lord.
+
+HAMLET. says  To be, or not to be, that is the question: Whether ’tis nobler
+
+OPHELIA. says  Good my lord, How does your honour for this many a day?
+
+HAMLET. says  I humbly thank you; well, well, well.
+
+OPHELIA. says  My lord, I have remembrances of yours That I have longed long
+
+HAMLET. says  No, not I. I never gave you aught.
+
+OPHELIA. says  My honour’d lord, you know right well you did, And with them
+
+HAMLET. says  Ha, ha! Are you honest?
+
+OPHELIA. says  My lord?
+
+HAMLET. says  Are you fair?
+
+OPHELIA. says  What means your lordship?
+
+HAMLET. says  That if you be honest and fair, your honesty should admit no
+
+OPHELIA. says  Could beauty, my lord, have better commerce than with honesty?
+
+HAMLET. says  Ay, truly; for the power of beauty will sooner transform
+
+OPHELIA. says  Indeed, my lord, you made me believe so.
+
+HAMLET. says  You should not have believed me; for virtue cannot so inoculate
+
+OPHELIA. says  I was the more deceived.
+
+HAMLET. says  Get thee to a nunnery. Why wouldst thou be a breeder of
+
+OPHELIA. says  At home, my lord.
+
+HAMLET. says  Let the doors be shut upon him, that he may play the fool
+
+OPHELIA. says  O help him, you sweet heavens!
+
+HAMLET. says  If thou dost marry, I’ll give thee this plague for thy dowry.
+
+OPHELIA. says  O heavenly powers, restore him!
+
+HAMLET. says  I have heard of your paintings too, well enough. God hath given
+
+OPHELIA. says  O, what a noble mind is here o’erthrown! The courtier’s,
+
+KING. says  Love? His affections do not that way tend, Nor what he spake,
+
+POLONIUS. says  It shall do well. But yet do I believe The origin and
+
+KING. says  It shall be so. Madness in great ones must not unwatch’d go.
+
+HAMLET. says  Speak the speech, I pray you, as I pronounced it to you,
+
+HAMLET. says  Be not too tame neither; but let your own discretion be your
+
+HAMLET. says  O reform it altogether. And let those that play your clowns
+
+POLONIUS. says  And the Queen too, and that presently.
+
+HAMLET. says  Bid the players make haste.
+
+ROSENCRANTZ and GUILDENSTERN. says  We will, my lord.
+
+HAMLET. says  What ho, Horatio!
+
+HORATIO. says  Here, sweet lord, at your service.
+
+HAMLET. says  Horatio, thou art e’en as just a man As e’er my conversation
+
+HORATIO. says  O my dear lord.
+
+HAMLET. says  Nay, do not think I flatter; For what advancement may I hope
+
+HORATIO. says  Well, my lord. If he steal aught the whilst this play is
+
+HAMLET. says  They are coming to the play. I must be idle. Get you a place.
+
+KING. says  How fares our cousin Hamlet?
+
+HAMLET. says  Excellent, i’ faith; of the chameleon’s dish: I eat the air,
+
+KING. says  I have nothing with this answer, Hamlet; these words are not
+
+HAMLET. says  No, nor mine now. [_To Polonius._] My lord, you play’d once i’
+
+POLONIUS. says  That did I, my lord, and was accounted a good actor.
+
+HAMLET. says  What did you enact?
+
+POLONIUS. says  I did enact Julius Caesar. I was kill’d i’ th’ Capitol.
+
+HAMLET. says  It was a brute part of him to kill so capital a calf there. Be
+
+ROSENCRANTZ. says  Ay, my lord; they stay upon your patience.
+
+QUEEN. says  Come hither, my dear Hamlet, sit by me.
+
+HAMLET. says  No, good mother, here’s metal more attractive.
+
+POLONIUS. says  [_To the King._] O ho! do you mark that?
+
+HAMLET. says  Lady, shall I lie in your lap?
+
+OPHELIA. says  No, my lord.
+
+HAMLET. says  I mean, my head upon your lap?
+
+OPHELIA. says  Ay, my lord.
+
+HAMLET. says  Do you think I meant country matters?
+
+OPHELIA. says  I think nothing, my lord.
+
+HAMLET. says  That’s a fair thought to lie between maids’ legs.
+
+OPHELIA. says  What is, my lord?
+
+HAMLET. says  Nothing.
+
+OPHELIA. says  You are merry, my lord.
+
+HAMLET. says  Who, I?
+
+OPHELIA. says  Ay, my lord.
+
+HAMLET. says  O God, your only jig-maker! What should a man do but be merry?
+
+OPHELIA. says  Nay, ’tis twice two months, my lord.
+
+HAMLET. says  So long? Nay then, let the devil wear black, for I’ll have a
+
+OPHELIA. says  What means this, my lord?
+
+HAMLET. says  Marry, this is miching mallicho; it means mischief.
+
+OPHELIA. says  Belike this show imports the argument of the play.
+
+HAMLET. says  We shall know by this fellow: the players cannot keep counsel;
+
+OPHELIA. says  Will they tell us what this show meant?
+
+HAMLET. says  Ay, or any show that you’ll show him. Be not you ashamed to
+
+OPHELIA. says  You are naught, you are naught: I’ll mark the play.
+
+HAMLET. says  Is this a prologue, or the posy of a ring?
+
+OPHELIA. says  ’Tis brief, my lord.
+
+HAMLET. says  As woman’s love.
+
+PLAYER KING. says  Full thirty times hath Phoebus’ cart gone round Neptune’s
+
+PLAYER QUEEN. says  So many journeys may the sun and moon Make us again count
+
+PLAYER KING. says  Faith, I must leave thee, love, and shortly too: My
+
+PLAYER QUEEN. says  O confound the rest. Such love must needs be treason in
+
+HAMLET. says  [_Aside._] Wormwood, wormwood.
+
+PLAYER QUEEN. says  The instances that second marriage move Are base respects
+
+PLAYER KING. says  I do believe you think what now you speak; But what we do
+
+PLAYER QUEEN. says  Nor earth to me give food, nor heaven light, Sport and
+
+HAMLET. says  [_To Ophelia._] If she should break it now.
+
+PLAYER KING. says  ’Tis deeply sworn. Sweet, leave me here awhile. My spirits
+
+PLAYER QUEEN. says  Sleep rock thy brain, And never come mischance between us
+
+HAMLET. says  Madam, how like you this play?
+
+QUEEN. says  The lady protests too much, methinks.
+
+HAMLET. says  O, but she’ll keep her word.
+
+KING. says  Have you heard the argument? Is there no offence in’t?
+
+HAMLET. says  No, no, they do but jest, poison in jest; no offence i’ th’
+
+KING. says  What do you call the play?
+
+HAMLET. says  _The Mousetrap._ Marry, how? Tropically. This play is the image
+
+OPHELIA. says  You are a good chorus, my lord.
+
+HAMLET. says  I could interpret between you and your love, if I could see the
+
+OPHELIA. says  You are keen, my lord, you are keen.
+
+HAMLET. says  It would cost you a groaning to take off my edge.
+
+OPHELIA. says  Still better, and worse.
+
+HAMLET. says  So you mistake your husbands.—Begin, murderer. Pox, leave thy
+
+HAMLET. says  He poisons him i’ th’garden for’s estate. His name’s Gonzago.
+
+OPHELIA. says  The King rises.
+
+HAMLET. says  What, frighted with false fire?
+
+QUEEN. says  How fares my lord?
+
+POLONIUS. says  Give o’er the play.
+
+KING. says  Give me some light. Away.
+
+HAMLET. says  Why, let the strucken deer go weep, The hart ungalled play; For
+
+HORATIO. says  Half a share.
+
+HAMLET. says  A whole one, I. For thou dost know, O Damon dear, This realm
+
+HORATIO. says  You might have rhymed.
+
+HAMLET. says  O good Horatio, I’ll take the ghost’s word for a thousand
+
+HORATIO. says  Very well, my lord.
+
+HAMLET. says  Upon the talk of the poisoning?
+
+HORATIO. says  I did very well note him.
+
+HAMLET. says  Ah, ha! Come, some music. Come, the recorders. For if the king
+
+GUILDENSTERN. says  Good my lord, vouchsafe me a word with you.
+
+HAMLET. says  Sir, a whole history.
+
+GUILDENSTERN. says  The King, sir—
+
+HAMLET. says  Ay, sir, what of him?
+
+GUILDENSTERN. says  Is in his retirement, marvellous distempered.
+
+HAMLET. says  With drink, sir?
+
+GUILDENSTERN. says  No, my lord; rather with choler.
+
+HAMLET. says  Your wisdom should show itself more richer to signify this to
+
+GUILDENSTERN. says  Good my lord, put your discourse into some frame, and
+
+HAMLET. says  I am tame, sir, pronounce.
+
+GUILDENSTERN. says  The Queen your mother, in most great affliction of
+
+HAMLET. says  You are welcome.
+
+GUILDENSTERN. says  Nay, good my lord, this courtesy is not of the right
+
+HAMLET. says  Sir, I cannot.
+
+GUILDENSTERN. says  What, my lord?
+
+HAMLET. says  Make you a wholesome answer. My wit’s diseased. But, sir, such
+
+ROSENCRANTZ. says  Then thus she says: your behaviour hath struck her into
+
+HAMLET. says  O wonderful son, that can so stonish a mother! But is there no
+
+ROSENCRANTZ. says  She desires to speak with you in her closet ere you go to
+
+HAMLET. says  We shall obey, were she ten times our mother. Have you any
+
+ROSENCRANTZ. says  My lord, you once did love me.
+
+HAMLET. says  And so I do still, by these pickers and stealers.
+
+ROSENCRANTZ. says  Good my lord, what is your cause of distemper? You do
+
+HAMLET. says  Sir, I lack advancement.
+
+ROSENCRANTZ. says  How can that be, when you have the voice of the King
+
+HAMLET. says  Ay, sir, but while the grass grows—the proverb is something
+
+GUILDENSTERN. says  O my lord, if my duty be too bold, my love is too
+
+HAMLET. says  I do not well understand that. Will you play upon this pipe?
+
+GUILDENSTERN. says  My lord, I cannot.
+
+HAMLET. says  I pray you.
+
+GUILDENSTERN. says  Believe me, I cannot.
+
+HAMLET. says  I do beseech you.
+
+GUILDENSTERN. says  I know no touch of it, my lord.
+
+HAMLET. says  ’Tis as easy as lying: govern these ventages with your finger
+
+GUILDENSTERN. says  But these cannot I command to any utterance of harmony. I
+
+HAMLET. says  Why, look you now, how unworthy a thing you make of me! You
+
+POLONIUS. says  My lord, the Queen would speak with you, and presently.
+
+HAMLET. says  Do you see yonder cloud that’s almost in shape of a camel?
+
+POLONIUS. says  By the mass, and ’tis like a camel indeed.
+
+HAMLET. says  Methinks it is like a weasel.
+
+POLONIUS. says  It is backed like a weasel.
+
+HAMLET. says  Or like a whale.
+
+POLONIUS. says  Very like a whale.
+
+HAMLET. says  Then will I come to my mother by and by.—They fool me to the
+
+POLONIUS. says  I will say so.
+
+HAMLET. says  By and by is easily said. Leave me, friends.
+
+KING. says  I like him not, nor stands it safe with us To let his madness
+
+GUILDENSTERN. says  We will ourselves provide. Most holy and religious fear
+
+ROSENCRANTZ. says  The single and peculiar life is bound With all the
+
+KING. says  Arm you, I pray you, to this speedy voyage; For we will fetters
+
+ROSENCRANTZ and GUILDENSTERN. says  We will haste us.
+
+POLONIUS. says  My lord, he’s going to his mother’s closet. Behind the arras
+
+KING. says  Thanks, dear my lord.
+
+HAMLET. says  Now might I do it pat, now he is praying. And now I’ll do’t.
+
+KING. says  My words fly up, my thoughts remain below. Words without thoughts
+
+POLONIUS. says  He will come straight. Look you lay home to him, Tell him his
+
+HAMLET. says  [_Within._] Mother, mother, mother.
+
+QUEEN. says  I’ll warrant you, Fear me not. Withdraw, I hear him coming.
+
+HAMLET. says  Now, mother, what’s the matter?
+
+QUEEN. says  Hamlet, thou hast thy father much offended.
+
+HAMLET. says  Mother, you have my father much offended.
+
+QUEEN. says  Come, come, you answer with an idle tongue.
+
+HAMLET. says  Go, go, you question with a wicked tongue.
+
+QUEEN. says  Why, how now, Hamlet?
+
+HAMLET. says  What’s the matter now?
+
+QUEEN. says  Have you forgot me?
+
+HAMLET. says  No, by the rood, not so. You are the Queen, your husband’s
+
+QUEEN. says  Nay, then I’ll set those to you that can speak.
+
+HAMLET. says  Come, come, and sit you down, you shall not budge. You go not
+
+QUEEN. says  What wilt thou do? Thou wilt not murder me? Help, help, ho!
+
+POLONIUS. says  [_Behind._] What, ho! help, help, help!
+
+HAMLET. says  How now? A rat? [_Draws._] Dead for a ducat, dead!
+
+POLONIUS. says  [_Behind._] O, I am slain!
+
+QUEEN. says  O me, what hast thou done?
+
+HAMLET. says  Nay, I know not. is it the King?
+
+QUEEN. says  O what a rash and bloody deed is this!
+
+HAMLET. says  A bloody deed. Almost as bad, good mother, As kill a king and
+
+QUEEN. says  As kill a king?
+
+HAMLET. says  Ay, lady, ’twas my word.— [_To Polonius._] Thou wretched, rash,
+
+QUEEN. says  What have I done, that thou dar’st wag thy tongue In noise so
+
+HAMLET. says  Such an act That blurs the grace and blush of modesty, Calls
+
+QUEEN. says  Ay me, what act, That roars so loud, and thunders in the index?
+
+HAMLET. says  Look here upon this picture, and on this, The counterfeit
+
+QUEEN. says  O Hamlet, speak no more. Thou turn’st mine eyes into my very
+
+HAMLET. says  Nay, but to live In the rank sweat of an enseamed bed, Stew’d
+
+QUEEN. says  O speak to me no more; These words like daggers enter in mine
+
+HAMLET. says  A murderer and a villain; A slave that is not twentieth part
+
+QUEEN. says  No more.
+
+HAMLET. says  A king of shreds and patches!—
+
+QUEEN. says  Alas, he’s mad.
+
+HAMLET. says  Do you not come your tardy son to chide, That, laps’d in time
+
+GHOST. says  Do not forget. This visitation Is but to whet thy almost blunted
+
+HAMLET. says  How is it with you, lady?
+
+QUEEN. says  Alas, how is’t with you, That you do bend your eye on vacancy,
+
+HAMLET. says  On him, on him! Look you how pale he glares, His form and cause
+
+QUEEN. says  To whom do you speak this?
+
+HAMLET. says  Do you see nothing there?
+
+QUEEN. says  Nothing at all; yet all that is I see.
+
+HAMLET. says  Nor did you nothing hear?
+
+QUEEN. says  No, nothing but ourselves.
+
+HAMLET. says  Why, look you there! look how it steals away! My father, in his
+
+QUEEN. says  This is the very coinage of your brain. This bodiless creation
+
+HAMLET. says  Ecstasy! My pulse as yours doth temperately keep time, And
+
+QUEEN. says  O Hamlet, thou hast cleft my heart in twain.
+
+HAMLET. says  O throw away the worser part of it, And live the purer with the
+
+QUEEN. says  What shall I do?
+
+HAMLET. says  Not this, by no means, that I bid you do: Let the bloat King
+
+QUEEN. says  Be thou assur’d, if words be made of breath, And breath of life,
+
+HAMLET. says  I must to England, you know that?
+
+QUEEN. says  Alack, I had forgot. ’Tis so concluded on.
+
+HAMLET. says  There’s letters seal’d: and my two schoolfellows, Whom I will
+
+KING. says  There’s matter in these sighs. These profound heaves You must
+
+QUEEN. says  Bestow this place on us a little while.
+
+KING. says  What, Gertrude? How does Hamlet?
+
+QUEEN. says  Mad as the sea and wind, when both contend Which is the
+
+KING. says  O heavy deed! It had been so with us, had we been there. His
+
+QUEEN. says  To draw apart the body he hath kill’d, O’er whom his very
+
+KING. says  O Gertrude, come away! The sun no sooner shall the mountains
+
+HAMLET. says  Safely stowed.
+
+ROSENCRANTZ and GUILDENSTERN. says  [_Within._] Hamlet! Lord Hamlet!
+
+HAMLET. says  What noise? Who calls on Hamlet? O, here they come.
+
+ROSENCRANTZ. says  What have you done, my lord, with the dead body?
+
+HAMLET. says  Compounded it with dust, whereto ’tis kin.
+
+ROSENCRANTZ. says  Tell us where ’tis, that we may take it thence, And bear
+
+HAMLET. says  Do not believe it.
+
+ROSENCRANTZ. says  Believe what?
+
+HAMLET. says  That I can keep your counsel, and not mine own. Besides, to be
+
+ROSENCRANTZ. says  Take you me for a sponge, my lord?
+
+HAMLET. says  Ay, sir; that soaks up the King’s countenance, his rewards, his
+
+ROSENCRANTZ. says  I understand you not, my lord.
+
+HAMLET. says  I am glad of it. A knavish speech sleeps in a foolish ear.
+
+ROSENCRANTZ. says  My lord, you must tell us where the body is and go with us
+
+HAMLET. says  The body is with the King, but the King is not with the body.
+
+GUILDENSTERN. says  A thing, my lord!
+
+HAMLET. says  Of nothing. Bring me to him. Hide fox, and all after.
+
+KING. says  I have sent to seek him and to find the body. How dangerous is it
+
+ROSENCRANTZ. says  Where the dead body is bestow’d, my lord, We cannot get
+
+KING. says  But where is he?
+
+ROSENCRANTZ. says  Without, my lord, guarded, to know your pleasure.
+
+KING. says  Bring him before us.
+
+ROSENCRANTZ. says  Ho, Guildenstern! Bring in my lord.
+
+KING. says  Now, Hamlet, where’s Polonius?
+
+HAMLET. says  At supper.
+
+KING. says  At supper? Where?
+
+HAMLET. says  Not where he eats, but where he is eaten. A certain convocation
+
+KING. says  Alas, alas!
+
+HAMLET. says  A man may fish with the worm that hath eat of a king, and eat
+
+KING. says  What dost thou mean by this?
+
+HAMLET. says  Nothing but to show you how a king may go a progress through
+
+KING. says  Where is Polonius?
+
+HAMLET. says  In heaven. Send thither to see. If your messenger find him not
+
+KING. says  [_To some Attendants._] Go seek him there.
+
+HAMLET. says  He will stay till you come.
+
+KING. says  Hamlet, this deed, for thine especial safety,— Which we do
+
+HAMLET. says  For England?
+
+KING. says  Ay, Hamlet.
+
+HAMLET. says  Good.
+
+KING. says  So is it, if thou knew’st our purposes.
+
+HAMLET. says  I see a cherub that sees them. But, come; for England!
+
+KING. says  Thy loving father, Hamlet.
+
+HAMLET. says  My mother. Father and mother is man and wife; man and wife is
+
+KING. says  Follow him at foot. Tempt him with speed aboard; Delay it not;
+
+FORTINBRAS. says  Go, Captain, from me greet the Danish king. Tell him that
+
+FORTINBRAS. says  Go softly on.
+
+HAMLET. says  Good sir, whose powers are these?
+
+HAMLET. says  How purpos’d, sir, I pray you?
+
+HAMLET. says  Who commands them, sir?
+
+HAMLET. says  Goes it against the main of Poland, sir, Or for some frontier?
+
+HAMLET. says  Why, then the Polack never will defend it.
+
+HAMLET. says  Two thousand souls and twenty thousand ducats Will not debate
+
+ROSENCRANTZ. says  Will’t please you go, my lord?
+
+HAMLET. says  I’ll be with you straight. Go a little before.
+
+QUEEN. says  I will not speak with her.
+
+QUEEN. says  What would she have?
+
+QUEEN. says  Let her come in.
+
+OPHELIA. says  Where is the beauteous Majesty of Denmark?
+
+QUEEN. says  How now, Ophelia?
+
+OPHELIA. says  [_Sings._] How should I your true love know From another one?
+
+QUEEN. says  Alas, sweet lady, what imports this song?
+
+OPHELIA. says  Say you? Nay, pray you mark. [_Sings._] He is dead and gone,
+
+QUEEN. says  Nay, but Ophelia—
+
+OPHELIA. says  Pray you mark. [_Sings._] White his shroud as the mountain
+
+QUEEN. says  Alas, look here, my lord!
+
+OPHELIA. says  [_Sings._] Larded all with sweet flowers; Which bewept to the
+
+KING. says  How do you, pretty lady?
+
+OPHELIA. says  Well, God dild you! They say the owl was a baker’s daughter.
+
+KING. says  Conceit upon her father.
+
+OPHELIA. says  Pray you, let’s have no words of this; but when they ask you
+
+KING. says  Pretty Ophelia!
+
+OPHELIA. says  Indeed la, without an oath, I’ll make an end on’t. [_Sings._]
+
+KING. says  How long hath she been thus?
+
+OPHELIA. says  I hope all will be well. We must be patient. But I cannot
+
+KING. says  Follow her close; give her good watch, I pray you.
+
+QUEEN. says  Alack, what noise is this?
+
+KING. says  Where are my Switzers? Let them guard the door.
+
+QUEEN. says  How cheerfully on the false trail they cry. O, this is counter,
+
+KING. says  The doors are broke.
+
+LAERTES. says  Where is this king?—Sirs, stand you all without.
+
+LAERTES. says  I pray you, give me leave.
+
+LAERTES. says  I thank you. Keep the door. O thou vile king, Give me my
+
+QUEEN. says  Calmly, good Laertes.
+
+LAERTES. says  That drop of blood that’s calm proclaims me bastard; Cries
+
+KING. says  What is the cause, Laertes, That thy rebellion looks so
+
+LAERTES. says  Where is my father?
+
+KING. says  Dead.
+
+QUEEN. says  But not by him.
+
+KING. says  Let him demand his fill.
+
+LAERTES. says  How came he dead? I’ll not be juggled with. To hell,
+
+KING. says  Who shall stay you?
+
+LAERTES. says  My will, not all the world. And for my means, I’ll husband
+
+KING. says  Good Laertes, If you desire to know the certainty Of your dear
+
+LAERTES. says  None but his enemies.
+
+KING. says  Will you know them then?
+
+LAERTES. says  To his good friends thus wide I’ll ope my arms; And, like the
+
+KING. says  Why, now you speak Like a good child and a true gentleman. That I
+
+LAERTES. says  How now! What noise is that?
+
+OPHELIA. says  [_Sings._] They bore him barefac’d on the bier, Hey no nonny,
+
+LAERTES. says  Hadst thou thy wits, and didst persuade revenge, It could not
+
+OPHELIA. says  You must sing ‘Down a-down, and you call him a-down-a.’ O, how
+
+LAERTES. says  This nothing’s more than matter.
+
+OPHELIA. says  There’s rosemary, that’s for remembrance; pray love, remember.
+
+LAERTES. says  A document in madness, thoughts and remembrance fitted.
+
+OPHELIA. says  There’s fennel for you, and columbines. There’s rue for you;
+
+LAERTES. says  Thought and affliction, passion, hell itself She turns to
+
+OPHELIA. says  [_Sings._] And will he not come again? And will he not come
+
+LAERTES. says  Do you see this, O God?
+
+KING. says  Laertes, I must commune with your grief, Or you deny me right. Go
+
+LAERTES. says  Let this be so; His means of death, his obscure burial,— No
+
+KING. says  So you shall. And where th’offence is let the great axe fall. I
+
+HORATIO. says  What are they that would speak with me?
+
+HORATIO. says  Let them come in.
+
+HORATIO. says  Let him bless thee too.
+
+HORATIO. says  [_Reads._] ‘Horatio, when thou shalt have overlooked this,
+
+knowest thine, HAMLET. says ’
+
+KING. says  Now must your conscience my acquittance seal, And you must put me
+
+LAERTES. says  It well appears. But tell me Why you proceeded not against
+
+KING. says  O, for two special reasons, Which may to you, perhaps, seem much
+
+LAERTES. says  And so have I a noble father lost, A sister driven into
+
+KING. says  Break not your sleeps for that. You must not think That we are
+
+KING. says  From Hamlet! Who brought them?
+
+KING. says  Laertes, you shall hear them. Leave us.
+
+sudden and more strange return. HAMLET. says ’
+
+LAERTES. says  Know you the hand?
+
+KING. says  ’Tis Hamlet’s character. ’Naked!’ And in a postscript here he
+
+LAERTES. says  I am lost in it, my lord. But let him come, It warms the very
+
+KING. says  If it be so, Laertes,— As how should it be so? How otherwise?—
+
+LAERTES. says  Ay, my lord; So you will not o’errule me to a peace.
+
+KING. says  To thine own peace. If he be now return’d, As checking at his
+
+LAERTES. says  My lord, I will be rul’d; The rather if you could devise it so
+
+KING. says  It falls right. You have been talk’d of since your travel much,
+
+LAERTES. says  What part is that, my lord?
+
+KING. says  A very riband in the cap of youth, Yet needful too, for youth no
+
+LAERTES. says  A Norman was’t?
+
+KING. says  A Norman.
+
+LAERTES. says  Upon my life, Lamond.
+
+KING. says  The very same.
+
+LAERTES. says  I know him well. He is the brooch indeed And gem of all the
+
+KING. says  He made confession of you, And gave you such a masterly report
+
+LAERTES. says  What out of this, my lord?
+
+KING. says  Laertes, was your father dear to you? Or are you like the
+
+LAERTES. says  Why ask you this?
+
+KING. says  Not that I think you did not love your father, But that I know
+
+LAERTES. says  To cut his throat i’ th’ church.
+
+KING. says  No place, indeed, should murder sanctuarize; Revenge should have
+
+LAERTES. says  I will do’t. And for that purpose I’ll anoint my sword. I
+
+KING. says  Let’s further think of this, Weigh what convenience both of time
+
+QUEEN. says  One woe doth tread upon another’s heel, So fast they follow.
+
+LAERTES. says  Drown’d! O, where?
+
+QUEEN. says  There is a willow grows aslant a brook, That shows his hoary
+
+LAERTES. says  Alas, then she is drown’d?
+
+QUEEN. says  Drown’d, drown’d.
+
+LAERTES. says  Too much of water hast thou, poor Ophelia, And therefore I
+
+KING. says  Let’s follow, Gertrude; How much I had to do to calm his rage!
+
+HAMLET. says  Has this fellow no feeling of his business, that he sings at
+
+HORATIO. says  Custom hath made it in him a property of easiness.
+
+HAMLET. says  ’Tis e’en so; the hand of little employment hath the daintier
+
+HAMLET. says  That skull had a tongue in it, and could sing once. How the
+
+HORATIO. says  It might, my lord.
+
+HAMLET. says  Or of a courtier, which could say ‘Good morrow, sweet lord! How
+
+HORATIO. says  Ay, my lord.
+
+HAMLET. says  Why, e’en so: and now my Lady Worm’s; chapless, and knocked
+
+HAMLET. says  There’s another. Why may not that be the skull of a lawyer?
+
+HORATIO. says  Not a jot more, my lord.
+
+HAMLET. says  Is not parchment made of sheep-skins?
+
+HORATIO. says  Ay, my lord, and of calf-skins too.
+
+HAMLET. says  They are sheep and calves which seek out assurance in that. I
+
+HAMLET. says  I think it be thine indeed, for thou liest in’t.
+
+HAMLET. says  Thou dost lie in’t, to be in’t and say it is thine. ’Tis for
+
+HAMLET. says  What man dost thou dig it for?
+
+HAMLET. says  What woman then?
+
+HAMLET. says  Who is to be buried in’t?
+
+HAMLET. says  How absolute the knave is! We must speak by the card, or
+
+HAMLET. says  How long is that since?
+
+HAMLET. says  Ay, marry, why was he sent into England?
+
+HAMLET. says  Why?
+
+HAMLET. says  How came he mad?
+
+HAMLET. says  How strangely?
+
+HAMLET. says  Upon what ground?
+
+HAMLET. says  How long will a man lie i’ th’earth ere he rot?
+
+HAMLET. says  Why he more than another?
+
+HAMLET. says  Whose was it?
+
+HAMLET. says  Nay, I know not.
+
+HAMLET. says  This?
+
+HAMLET. says  Let me see. [_Takes the skull._] Alas, poor Yorick. I knew him,
+
+HORATIO. says  What’s that, my lord?
+
+HAMLET. says  Dost thou think Alexander looked o’ this fashion i’ th’earth?
+
+HORATIO. says  E’en so.
+
+HAMLET. says  And smelt so? Pah!
+
+HORATIO. says  E’en so, my lord.
+
+HAMLET. says  To what base uses we may return, Horatio! Why may not
+
+HORATIO. says  ’Twere to consider too curiously to consider so.
+
+HAMLET. says  No, faith, not a jot. But to follow him thither with modesty
+
+LAERTES. says  What ceremony else?
+
+HAMLET. says  That is Laertes, a very noble youth. Mark.
+
+LAERTES. says  What ceremony else?
+
+PRIEST. says  Her obsequies have been as far enlarg’d As we have warranties.
+
+LAERTES. says  Must there no more be done?
+
+PRIEST. says  No more be done. We should profane the service of the dead To
+
+LAERTES. says  Lay her i’ th’earth, And from her fair and unpolluted flesh
+
+HAMLET. says  What, the fair Ophelia?
+
+QUEEN. says  [_Scattering flowers._] Sweets to the sweet. Farewell. I hop’d
+
+LAERTES. says  O, treble woe Fall ten times treble on that cursed head Whose
+
+HAMLET. says  [_Advancing._] What is he whose grief Bears such an emphasis?
+
+LAERTES. says  [_Grappling with him._] The devil take thy soul!
+
+HAMLET. says  Thou pray’st not well. I prythee take thy fingers from my
+
+KING. says  Pluck them asunder.
+
+QUEEN. says  Hamlet! Hamlet!
+
+HORATIO. says  Good my lord, be quiet.
+
+HAMLET. says  Why, I will fight with him upon this theme Until my eyelids
+
+QUEEN. says  O my son, what theme?
+
+HAMLET. says  I lov’d Ophelia; forty thousand brothers Could not, with all
+
+KING. says  O, he is mad, Laertes.
+
+QUEEN. says  For love of God forbear him!
+
+HAMLET. says  ’Swounds, show me what thou’lt do: Woul’t weep? woul’t fight?
+
+QUEEN. says  This is mere madness: And thus awhile the fit will work on him;
+
+HAMLET. says  Hear you, sir; What is the reason that you use me thus? I lov’d
+
+KING. says  I pray thee, good Horatio, wait upon him.
+
+HAMLET. says  So much for this, sir. Now let me see the other; You do
+
+HORATIO. says  Remember it, my lord!
+
+HAMLET. says  Sir, in my heart there was a kind of fighting That would not
+
+HORATIO. says  That is most certain.
+
+HAMLET. says  Up from my cabin, My sea-gown scarf’d about me, in the dark
+
+HORATIO. says  Is’t possible?
+
+HAMLET. says  Here’s the commission, read it at more leisure. But wilt thou
+
+HORATIO. says  I beseech you.
+
+HAMLET. says  Being thus benetted round with villanies,— Or I could make a
+
+HORATIO. says  Ay, good my lord.
+
+HAMLET. says  An earnest conjuration from the King, As England was his
+
+HORATIO. says  How was this seal’d?
+
+HAMLET. says  Why, even in that was heaven ordinant. I had my father’s signet
+
+HORATIO. says  So Guildenstern and Rosencrantz go to’t.
+
+HAMLET. says  Why, man, they did make love to this employment. They are not
+
+HORATIO. says  Why, what a king is this!
+
+HAMLET. says  Does it not, thinks’t thee, stand me now upon,— He that hath
+
+HORATIO. says  It must be shortly known to him from England What is the issue
+
+HAMLET. says  It will be short. The interim is mine; And a man’s life’s no
+
+HORATIO. says  Peace, who comes here?
+
+OSRIC. says  Your lordship is right welcome back to Denmark.
+
+HAMLET. says  I humbly thank you, sir. Dost know this waterfly?
+
+HORATIO. says  No, my good lord.
+
+HAMLET. says  Thy state is the more gracious; for ’tis a vice to know him. He
+
+OSRIC. says  Sweet lord, if your lordship were at leisure, I should impart a
+
+HAMLET. says  I will receive it with all diligence of spirit. Put your bonnet
+
+OSRIC. says  I thank your lordship, ’tis very hot.
+
+HAMLET. says  No, believe me, ’tis very cold, the wind is northerly.
+
+OSRIC. says  It is indifferent cold, my lord, indeed.
+
+HAMLET. says  Methinks it is very sultry and hot for my complexion.
+
+OSRIC. says  Exceedingly, my lord; it is very sultry,—as ’twere—I cannot tell
+
+HAMLET. says  I beseech you, remember,—
+
+OSRIC. says  Nay, in good faith; for mine ease, in good faith. Sir, here is
+
+HAMLET. says  Sir, his definement suffers no perdition in you, though I know,
+
+OSRIC. says  Your lordship speaks most infallibly of him.
+
+HAMLET. says  The concernancy, sir? Why do we wrap the gentleman in our more
+
+OSRIC. says  Sir?
+
+HORATIO. says  Is’t not possible to understand in another tongue? You will
+
+HAMLET. says  What imports the nomination of this gentleman?
+
+OSRIC. says  Of Laertes?
+
+HORATIO. says  His purse is empty already, all’s golden words are spent.
+
+HAMLET. says  Of him, sir.
+
+OSRIC. says  I know you are not ignorant,—
+
+HAMLET. says  I would you did, sir; yet in faith if you did, it would not
+
+OSRIC. says  You are not ignorant of what excellence Laertes is,—
+
+HAMLET. says  I dare not confess that, lest I should compare with him in
+
+OSRIC. says  I mean, sir, for his weapon; but in the imputation laid on him,
+
+HAMLET. says  What’s his weapon?
+
+OSRIC. says  Rapier and dagger.
+
+HAMLET. says  That’s two of his weapons. But well.
+
+OSRIC. says  The King, sir, hath wager’d with him six Barbary horses, against
+
+HAMLET. says  What call you the carriages?
+
+HORATIO. says  I knew you must be edified by the margin ere you had done.
+
+OSRIC. says  The carriages, sir, are the hangers.
+
+HAMLET. says  The phrase would be more german to the matter if we could carry
+
+OSRIC. says  The King, sir, hath laid that in a dozen passes between you and
+
+HAMLET. says  How if I answer no?
+
+OSRIC. says  I mean, my lord, the opposition of your person in trial.
+
+HAMLET. says  Sir, I will walk here in the hall. If it please his Majesty, it
+
+OSRIC. says  Shall I re-deliver you e’en so?
+
+HAMLET. says  To this effect, sir; after what flourish your nature will.
+
+OSRIC. says  I commend my duty to your lordship.
+
+HAMLET. says  Yours, yours.
+
+HORATIO. says  This lapwing runs away with the shell on his head.
+
+HAMLET. says  He did comply with his dug before he suck’d it. Thus has
+
+HAMLET. says  I am constant to my purposes, they follow the King’s pleasure.
+
+HAMLET. says  In happy time.
+
+HAMLET. says  She well instructs me.
+
+HORATIO. says  You will lose this wager, my lord.
+
+HAMLET. says  I do not think so. Since he went into France, I have been in
+
+HORATIO. says  Nay, good my lord.
+
+HAMLET. says  It is but foolery; but it is such a kind of gain-giving as
+
+HORATIO. says  If your mind dislike anything, obey it. I will forestall their
+
+HAMLET. says  Not a whit, we defy augury. There’s a special providence in the
+
+KING. says  Come, Hamlet, come, and take this hand from me.
+
+HAMLET. says  Give me your pardon, sir. I have done you wrong; But pardon’t
+
+LAERTES. says  I am satisfied in nature, Whose motive in this case should
+
+HAMLET. says  I embrace it freely, And will this brother’s wager frankly
+
+LAERTES. says  Come, one for me.
+
+HAMLET. says  I’ll be your foil, Laertes; in mine ignorance Your skill shall
+
+LAERTES. says  You mock me, sir.
+
+HAMLET. says  No, by this hand.
+
+KING. says  Give them the foils, young Osric. Cousin Hamlet, You know the
+
+HAMLET. says  Very well, my lord. Your Grace has laid the odds o’ the weaker
+
+KING. says  I do not fear it. I have seen you both; But since he is better’d,
+
+LAERTES. says  This is too heavy. Let me see another.
+
+HAMLET. says  This likes me well. These foils have all a length?
+
+OSRIC. says  Ay, my good lord.
+
+KING. says  Set me the stoups of wine upon that table. If Hamlet give the
+
+HAMLET. says  Come on, sir.
+
+LAERTES. says  Come, my lord.
+
+HAMLET. says  One.
+
+LAERTES. says  No.
+
+HAMLET. says  Judgment.
+
+OSRIC. says  A hit, a very palpable hit.
+
+LAERTES. says  Well; again.
+
+KING. says  Stay, give me drink. Hamlet, this pearl is thine; Here’s to thy
+
+HAMLET. says  I’ll play this bout first; set it by awhile.
+
+LAERTES. says  A touch, a touch, I do confess.
+
+KING. says  Our son shall win.
+
+QUEEN. says  He’s fat, and scant of breath. Here, Hamlet, take my napkin, rub
+
+HAMLET. says  Good madam.
+
+KING. says  Gertrude, do not drink.
+
+QUEEN. says  I will, my lord; I pray you pardon me.
+
+KING. says  [_Aside._] It is the poison’d cup; it is too late.
+
+HAMLET. says  I dare not drink yet, madam. By and by.
+
+QUEEN. says  Come, let me wipe thy face.
+
+LAERTES. says  My lord, I’ll hit him now.
+
+KING. says  I do not think’t.
+
+LAERTES. says  [_Aside._] And yet ’tis almost ’gainst my conscience.
+
+HAMLET. says  Come for the third, Laertes. You do but dally. I pray you pass
+
+LAERTES. says  Say you so? Come on.
+
+OSRIC. says  Nothing neither way.
+
+LAERTES. says  Have at you now.
+
+KING. says  Part them; they are incens’d.
+
+HAMLET. says  Nay, come again!
+
+OSRIC. says  Look to the Queen there, ho!
+
+HORATIO. says  They bleed on both sides. How is it, my lord?
+
+OSRIC. says  How is’t, Laertes?
+
+LAERTES. says  Why, as a woodcock to my own springe, Osric. I am justly
+
+HAMLET. says  How does the Queen?
+
+KING. says  She swoons to see them bleed.
+
+QUEEN. says  No, no, the drink, the drink! O my dear Hamlet! The drink, the
+
+HAMLET. says  O villany! Ho! Let the door be lock’d: Treachery! Seek it out.
+
+LAERTES. says  It is here, Hamlet. Hamlet, thou art slain. No medicine in the
+
+HAMLET. says  The point envenom’d too! Then, venom, to thy work.
+
+OSRIC and LORDS. says  Treason! treason!
+
+KING. says  O yet defend me, friends. I am but hurt.
+
+HAMLET. says  Here, thou incestuous, murderous, damned Dane, Drink off this
+
+LAERTES. says  He is justly serv’d. It is a poison temper’d by himself.
+
+HAMLET. says  Heaven make thee free of it! I follow thee. I am dead, Horatio.
+
+HORATIO. says  Never believe it. I am more an antique Roman than a Dane.
+
+HAMLET. says  As th’art a man, Give me the cup. Let go; by Heaven, I’ll
+
+OSRIC. says  Young Fortinbras, with conquest come from Poland, To the
+
+HAMLET. says  O, I die, Horatio. The potent poison quite o’er-crows my
+
+HORATIO. says  Now cracks a noble heart. Good night, sweet prince, And
+
+FORTINBRAS. says  Where is this sight?
+
+HORATIO. says  What is it you would see? If aught of woe or wonder, cease
+
+FORTINBRAS. says  This quarry cries on havoc. O proud death, What feast is
+
+HORATIO. says  Not from his mouth, Had it th’ability of life to thank you. He
+
+FORTINBRAS. says  Let us haste to hear it, And call the noblest to the
+
+HORATIO. says  Of that I shall have also cause to speak, And from his mouth
+
+FORTINBRAS. says  Let four captains Bear Hamlet like a soldier to the stage,
+
