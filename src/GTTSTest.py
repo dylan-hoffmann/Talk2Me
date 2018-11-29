@@ -4,10 +4,11 @@ from playsound import playsound
 #Iterate over the line and insert breaks at each .,: for realistic speech
 def parseText(text):
     line = ""
+    sentiment = 1
     for word in text.split():
         print("word", word)
         if word[-1] == ".":
-            word = word + "<break time=\"700ms\" />"
+            word = word + "<break time=\"" + str(700* sentiment)     + "ms\" />"
         elif word[-1] == ",":
             word = word + "<break time=\"450ms\" />"
         elif word[-1] == ":":
