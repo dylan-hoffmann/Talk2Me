@@ -129,9 +129,8 @@ class Scheduler:
             time.sleep(0.1)
             char, line = self.queue.get()
             if char in self.actorDict:
-                line = "To Erlang " + line
-                # print(self.E)
-                cast(self.erlPid, str(line))
+                msg = (char, str(line))
+                cast(self.erlPid, msg)
                 # self.actorDict[char].readLine(line=line)
             # print(f"Scheduler cue'ing {char} with line {line}")
 
@@ -201,7 +200,7 @@ def start(ErlangPid=None):
     print("Here")
 
     print(f"Erlang PiD {ErlangPid}")
-    file = open("Hamlet.txt", 'r')
+    file = open("lines.txt", 'r')
 
     actors = ["NARRATOR", "KING", "QUEEN", "HAMLET", "CLAUDIUS", "GHOST",
               "POLONIUS", "LAERTES", "OPHELIA", "HORATIO", "FORTINBRAS",
