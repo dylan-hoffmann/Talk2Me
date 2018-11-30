@@ -40,17 +40,14 @@ p = re.compile("([A-Z]+\.)")
 # Main driver class, runs most of our other classes
 class Talk2Me:
 
-    def __init__(self, actors=[], file=None):
-        self.actors = actors  # List of all actors
-        self.queue = Queue()  # Queue between Parser and Scheduler
-        self.sentQ = Queue()  # Queue between Parser and Sentiment Analysis
-        # Parse script and send lines to scheduler and sent_analysis
-        self.parser = Parser(actors=self.actors, queue=self.queue,
-                             file=file, sentQ=self.sentQ)
-        # Receive actors and lines from the parser and
-        # send them to the correct actor
-        self.scheduler = Scheduler(actors=self.actors, queue=self.queue)
-        # Do sentiment analysis on the provided lines
+    def __init__(self, actors=[], file=None, erlPid=None):
+
+        self.actors    = actors
+        self.erlPid    = erlPid
+        self.queue     = Queue()
+        self.sentQ     = Queue()
+        self.parser    = Parser(actors=self.actors, queue=self.queue, file=file, sentQ=self.sentQ)
+        self.scheduler = Scheduler(actors=self.actors, queue=self.queue, erlPid=erlPid)
         self.sentiment = Sentiment(self.sentQ)
 
     def run(self):
@@ -107,17 +104,16 @@ class Parser:
 # to the appropriate actor
 class Scheduler:
 
-    def __init__(self, actors=[], queue=None):
+
+    def __init__(self, actors=[], queue=None, erlPid=None):
         self.actors = actors
         self.actorQ = dict([(actor, Queue()) for actor in self.actors])
-        self.actorObj = [
-            Actor(name=self.actors[i], queue=self.actorQ[self.actors[i]]) for i
-            in range(len(actors))]
-        self.actorDict = {self.actors[i]: self.actorObj[i] for i in
-                          range(len(self.actors))}
-        # print(self.actorQ)
-        # self.actorThreads = [Thread()]
-
+        self.actorObj = [Actor(name=self.actors[i], queue=self.actorQ[self.actors[i]]) for i in range(len(actors))]
+        self.actorDict = {self.actors[i]: self.actorObj[i] for i in range(len(self.actors))}
+        #print(self.actorQ)
+        #self.actorThreads = [Thread()]
+        
+        self.erlPid = erlPid
         self.queue = queue
         self.thread = threading.Thread(target=self.run, name="Scheduler",
                                        args=[])
@@ -128,8 +124,11 @@ class Scheduler:
             time.sleep(0.1)
             char, line = self.queue.get()
             if char in self.actorDict:
-                self.actorDict[char].readLine(line=line)
-            # print(f"Scheduler cue'ing {char} with line {line}")
+                line = "To Erlang " + line
+                #print(self.E)
+                cast(self.erlPid, str(line))
+                #self.actorDict[char].readLine(line=line)
+            #print(f"Scheduler cue'ing {char} with line {line}")
 
     def cue(self, actorId=None, line=None):
         pass
@@ -177,7 +176,7 @@ class Sentiment:
 
         while True:
             line = self.queue.get()
-            print(line)
+            #print(line)
             if line == None:
                 break
             parsedL = []
@@ -189,24 +188,34 @@ class Sentiment:
             data_test = pad_sequences(data_int_t, padding='post',
                                       maxlen=(MAX_SEQUENCE_LENGTH))
             y_prob = model_test.predict(data_test)
+    
+            #print(y_prob)
 
-            print(y_prob)
 
 
-def start(erlangPid=None):
+
+
+
+def start(ErlangPid=None):
+
+
     print("Here")
 
-    time.sleep(3)
-    cast(erlangPid, "Hello There")
+    
 
-    return Atom("ok")
+    print(f"Erlang PiD {ErlangPid}")
+    file = open("Hamlet.txt", 'r')
 
-    # file = open("Hamlet.txt", 'r')
+    actors = ["NARRATOR","KING", "QUEEN","HAMLET", "CLAUDIUS", "GHOST", "POLONIUS", "LAERTES", "OPHELIA", "HORATIO", "FORTINBRAS", "VOLTEMAND", "CORNELIUS", "ROSENCRANTZ", "GUILDENSTERN", "MARCELLUS", "BARNARDO", "FRANCISCO", "OSRIC", "REYNALDO", "FIRST CLOWN", "PRIEST", "LORDS", "FIRST AMBASSADOR"]
+    a = Talk2Me(file=file, actors=actors, erlPid=ErlangPid)
+    # while True:
+    #     time.sleep(3)
 
-    # actors = ["NARRATOR","KING", "QUEEN","HAMLET", "CLAUDIUS", "GHOST",
-    # "POLONIUS", "LAERTES", "OPHELIA", "HORATIO", "FORTINBRAS", "VOLTEMAND",
-    # "CORNELIUS", "ROSENCRANTZ", "GUILDENSTERN", "MARCELLUS", "BARNARDO",
-    # "FRANCISCO", "OSRIC", "REYNALDO", "FIRST CLOWN", "PRIEST", "LORDS",
-    # "FIRST AMBASSADOR"]
-    # a = Talk2Me(file=file, actors=actors)
-    # eturn "Hello World"
+    #     cast(ErlangPid, "Hello There")
+
+    #return Atom(b"ok")
+
+
+
+
+    #eturn "Hello World"
