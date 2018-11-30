@@ -2,19 +2,35 @@
 
 import sys
 import time
+import queue
+import threading
+
+
+speechQ = queue.Queue()
 
 class Actor:
 
     def __init__(self, actorId=None):
+        global speechQ
+        self.speechQ = speechQ
         self.Id = actorId
-        self.run()
+        self.thread = threading.Thread(target=self.run, name="Actor", args=[])
+        self.thread.start()
 
     def run(self):
         while True:
-            time.sleep(1)
-            print(f"Listening for Actor {self.Id}")
+            line = speechQ.get()
+            print(f"Actor {self.Id} has picked up line {line}")
+
+
+def start(actorId):
+
+
+    a = Actor(actorId=actorId)
 
 
 
+def enqueue(line):
 
-myActor = Actor(sys.argv[1])
+    speechQ.put(line)
+
