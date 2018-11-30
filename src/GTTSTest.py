@@ -8,7 +8,7 @@ def parseText(text):
     for word in text.split():
         print("word", word)
         if word[-1] == ".":
-            word = word + "<break time=\"" + str(700* sentiment)     + "ms\" />"
+            word = word + "<break time=\"" + str(700* sentiment) + "ms\" />"
         elif word[-1] == ",":
             word = word + "<break time=\"450ms\" />"
         elif word[-1] == ":":
@@ -46,10 +46,12 @@ def synthesize_ssml():
     # Names of voices can be retrieved with client.list_voices().
     voice = texttospeech.types.VoiceSelectionParams(
         language_code='en-US',
-        ssml_gender=texttospeech.enums.SsmlVoiceGender.FEMALE)
+        ssml_gender=texttospeech.enums.SsmlVoiceGender.MALE,
+        name='en-AU-Wavenet-B')
 
     audio_config = texttospeech.types.AudioConfig(
-        audio_encoding=texttospeech.enums.AudioEncoding.MP3)
+        audio_encoding=texttospeech.enums.AudioEncoding.MP3,
+        speaking_rate=0.8)
 
     response = client.synthesize_speech(input_text, voice, audio_config)
 
