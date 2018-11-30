@@ -25,17 +25,17 @@
 join(Actor_name, Node_name, Play_name) ->
 	{ok, P1} = python:start([{python_path, "."}, {python, "python3"}])
 	python:call(P1, actor, start, [Actor_name]),
-	Pid = spawn(distributor, receiving, [Actor_name]),
-	rpc:call(Node_name, distributor, join_play, [Actor_name, Pid, P1]),
+	Pid = spawn(distributor, receiving, [Actor_name, P1]),
+	rpc:call(Node_name, distributor, join_play, [Actor_name, Pid]),
 	% only parser sends message
 	io:format("~p: joining.~n", [Actor_name]).
 
-receiving(Actor_name) ->
+receiving(Actor_name, PPid) ->
 	receive
 		% Actor_name should match Receiver name
 		{message, Actor_name, Text} ->
 			% receive message from Python
-			io:format("~p: ~p~n", [Actor_name, Text]);
+			io:format("~p: ~p: Python PID ~p~n", [Actor_name, Text, PPid]);
 			%call_python(Actor_name, Text);
 		% add actor to a list of actors
 		{list, Actors}	->
@@ -104,8 +104,8 @@ stop() ->
 	gen_server:cast(?MODULE, {stop}).
 
 % add an actor client to the server
-join_play(Name, Pid, PPid) ->
-	gen_server:cast(?MODULE, {subscribe, Name, Pid, PPid}).
+join_play(Name, Pid) ->
+	gen_server:cast(?MODULE, {subscribe, Name, Pid}).
 % remove a chat client from the server
 leave_play(Name) ->
 	gen_server:cast(?MODULE, {unsubscribe, Name}).
@@ -153,8 +153,8 @@ handle_call({list_actors, Pid}, _From, State) ->
 handle_cast({stop}, State) ->
 	{stop, play_ends, State};
 
-handle_cast({subscribe, Name, Pid, PPid}, State) ->
-	NewState = add_actor(Name, Pid, PPid, State),
+handle_cast({subscribe, Name, Pid}, State) ->
+	NewState = add_actor(Name, Pid, State),
 	{noreply, NewState}; 		
 
 handle_cast({unsubscribe, Name}, State) ->
@@ -170,7 +170,7 @@ terminate(_Reason, _State) ->
 
 
 % subscribe handler
-add_actor(Name, Pid, PPid, State) ->
+add_actor(Name, Pid, State) ->
 	Find = is_exist(Name, State),
 	if
 		Find == find ->
@@ -178,7 +178,7 @@ add_actor(Name, Pid, PPid, State) ->
 			State;
 		true ->
 			io:format("New actor ~p joins.~n", [Name]),
-			NewState = [{Name, Pid, PPid} | State], 
+			NewState = [{Name, Pid} | State], 
 			NewState
 	end.	
 
@@ -188,7 +188,8 @@ remove_actor(Name, State) ->
 	if 
 		Find == find ->
 			io:format("Actor ~p leaves.~n", [Name]),
-			NewState = lists:delete({Name, _, _}, State),
+			Pid = get_pid(Name),
+			NewState = lists:delete({Name, Pid}, State),
 			NewState;
 		true -> 
 			io:format("~p does not exist.~n", [Name]),
@@ -216,7 +217,7 @@ send_to_actor(Pid, FullMessage) ->
 get_pid(_, []) ->
 	error;
 get_pid(Receiver, [First | Rest]) ->
-	{Name, Pid, _} = First,
+	{Name, Pid} = First,
 	if
 		Name == Receiver -> Pid;
 		true -> get_pid(Receiver, Rest)
@@ -230,13 +231,13 @@ get_actors(From, State) ->
 
 get_names([], Res) -> Res;	
 get_names([First | Rest], Res) ->
-	{Name, _, _} = First,
+	{Name, _} = First,
 	get_names(Rest, [Name | Res]).
 
 % check if actor exists
 is_exist(_, []) -> not_find;
 is_exist(Actor_name, [First | Rest]) ->
-	{Name, _, _} = First,
+	{Name, _} = First,
 	if 
 		Actor_name == Name -> find;
 		true -> is_exist(Actor_name, Rest)
