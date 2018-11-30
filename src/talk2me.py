@@ -24,6 +24,9 @@ from keras.models import Model
 from keras import backend as K
 from keras.engine.topology import Layer, InputSpec
 
+from erlport.erlterms import Atom
+from erlport.erlang import set_message_handler, cast
+
 MAX_NB_WORDS = 40000 # max no. of words for tokenizer
 MAX_SEQUENCE_LENGTH = 30 # max length of text (words) including padding
 VALIDATION_SPLIT = 0.2
@@ -188,8 +191,23 @@ class Sentiment:
 
 
 
-file = open("Hamlet.txt", 'r')
 
 
-actors = ["NARRATOR","KING", "QUEEN","HAMLET", "CLAUDIUS", "GHOST", "POLONIUS", "LAERTES", "OPHELIA", "HORATIO", "FORTINBRAS", "VOLTEMAND", "CORNELIUS", "ROSENCRANTZ", "GUILDENSTERN", "MARCELLUS", "BARNARDO", "FRANCISCO", "OSRIC", "REYNALDO", "FIRST CLOWN", "PRIEST", "LORDS", "FIRST AMBASSADOR"]
-a = Talk2Me(file=file, actors=actors)
+def start(ErlangPid=None):
+
+
+    print("Here")
+
+    
+
+    time.sleep(3)
+    cast(dest, "Hello There")
+    
+    return Atom("ok")
+
+    # file = open("Hamlet.txt", 'r')
+
+
+    # actors = ["NARRATOR","KING", "QUEEN","HAMLET", "CLAUDIUS", "GHOST", "POLONIUS", "LAERTES", "OPHELIA", "HORATIO", "FORTINBRAS", "VOLTEMAND", "CORNELIUS", "ROSENCRANTZ", "GUILDENSTERN", "MARCELLUS", "BARNARDO", "FRANCISCO", "OSRIC", "REYNALDO", "FIRST CLOWN", "PRIEST", "LORDS", "FIRST AMBASSADOR"]
+    # a = Talk2Me(file=file, actors=actors)
+    #eturn "Hello World"
