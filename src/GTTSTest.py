@@ -1,7 +1,8 @@
 from playsound import playsound
 from playsound import playsound
 
-#Iterate over the line and insert breaks at each .,: for realistic speech
+#Iterate over the line and insert breaks at each .,: for realistic
+#speech patterns
 def parseText(text):
     line = ""
     sentiment = 1
@@ -18,6 +19,7 @@ def parseText(text):
     print("text", text, "line", line)
     return line
 
+#Synthesize speech
 def synthesize_ssml():
     """Synthesizes speech from the input string of ssml.
 
@@ -49,6 +51,7 @@ def synthesize_ssml():
         ssml_gender=texttospeech.enums.SsmlVoiceGender.MALE,
         name='en-AU-Wavenet-B')
 
+    #Set the output and speaking rate
     audio_config = texttospeech.types.AudioConfig(
         audio_encoding=texttospeech.enums.AudioEncoding.MP3,
         speaking_rate=0.8)
