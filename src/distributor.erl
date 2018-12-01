@@ -11,11 +11,11 @@
 -behavior(gen_server).
 
 % Clients
--export([join/3, receiving/1]).
+-export([join/3, receiving/2]).
 % Server
 -export([start_link/0, stop/0, listen/0, start_python/0]).
 -export([init/1, handle_call/3, handle_cast/2, terminate/2]).
--export([join_play/2, leave_play/1, send_message/2, list_actors/1]).
+-export([join_play/2, leave_play/1, send_message/2, list_actors/1, cue/1]).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -23,7 +23,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 join(Actor_name, Node_name, Play_name) ->
-	{ok, P1} = python:start([{python_path, "."}, {python, "python3"}])
+	{ok, P1} = python:start([{python_path, "."}, {python, "python3"}]),
 	python:call(P1, actor, start, [Actor_name]),
 	Pid = spawn(distributor, receiving, [Actor_name, P1]),
 	rpc:call(Node_name, distributor, join_play, [Actor_name, Pid]),
@@ -35,18 +35,21 @@ receiving(Actor_name, PPid) ->
 		% Actor_name should match Receiver name
 		{message, Actor_name, Text} ->
 			% receive message from Python
-			io:format("~p: ~p: Python PID ~p~n", [Actor_name, Text, PPid]);
+		python:call(PPid, actor, enqueue, [Text]);
+			%io:format("~p: ~p Python PID ~p ~n", [Actor_name, Text, PPid]);
 			%call_python(Actor_name, Text);
 		% add actor to a list of actors
 		{list, Actors}	->
 			io:format("Current actors are:~n", []),
 			print(Actors);
+		{cue, Actor}	->
+			io:format("Cuing pt2 ~p:~n", [Actor]);
 		{notice, Notice} ->
 			io:format("~p~n", [Notice]);
 		_other ->
 			dunno		
 	end,
-	receiving(Actor_name).
+	receiving(Actor_name, PPid).
 
 % this function can only be used by the parser
 % parser is like a controller of the whole play
@@ -71,11 +74,7 @@ receiving(Actor_name, PPid) ->
 % 			end,	
 % 	end.
 
-% Erlang call python function
-call_python(Name, Text) ->
-	{ok, PID} = python:start(),
-	python:call(PID, speech, speech, [Name, Text]),
-	python:stop(PID).
+
 % print the names of all actors
 print([]) -> ok;
 print([First | Rest]) ->
@@ -112,6 +111,9 @@ leave_play(Name) ->
 % send message from parser to an actor
 send_message(Receiver, Text) ->
 	gen_server:call(?MODULE, {send_message, Receiver, Text}).
+
+cue(Receiver) ->
+	gen_server:call(?MODULE, {cue, Receiver}).
 % list all the names of actors
 % FromPid should be the pid of parser
 list_actors(FromPid) ->
@@ -119,7 +121,9 @@ list_actors(FromPid) ->
 
 listen() ->
     receive
-        {Actor_name, Msg}-> rpc:call(node(), distributor, send_message, [Actor_name, Msg])
+        {Actor_name, Msg}->  rpc:call(node(), distributor, send_message, [Actor_name, Msg]);
+		{Actor_name}-> io:format("Starting to cue"),
+		rpc:call(node(), distributor, cue, [Actor_name])
     end,
 	listen().
 
@@ -146,6 +150,11 @@ handle_call({send_message, Receiver, Text}, _From, State) ->
 	Reply = message(Receiver, Text, State),
 	{reply, Reply, State};
 
+handle_call({cue, Actor}, _From, State) ->
+	io:format("Cuing ~p ~n", [Actor]), 
+	Reply = message(Actor, State, cue),
+	{reply, Reply, State};
+
 handle_call({list_actors, Pid}, _From, State) ->
 	Reply = get_actors(Pid, State),
 	{reply, Reply, State}.
@@ -170,7 +179,7 @@ terminate(_Reason, _State) ->
 
 
 % subscribe handler
-add_actor(Name, Pid, State) ->
+add_actor(Name, Pid,State) ->
 	Find = is_exist(Name, State),
 	if
 		Find == find ->
@@ -188,7 +197,7 @@ remove_actor(Name, State) ->
 	if 
 		Find == find ->
 			io:format("Actor ~p leaves.~n", [Name]),
-			Pid = get_pid(Name),
+			Pid = get_pid(Name, State),
 			NewState = lists:delete({Name, Pid}, State),
 			NewState;
 		true -> 
@@ -197,6 +206,19 @@ remove_actor(Name, State) ->
 	end.		
 
 % send_message handler
+message(Receiver, State, cue) ->
+	Find = is_exist(Receiver, State),
+	if
+	 	Find == find ->
+	 		FullMessage = {cue, Receiver},
+			Pid = get_pid(Receiver, State),
+			send_to_actor(Pid, FullMessage),
+			ok;
+		true ->
+			io:format("~p does not exist.~n", [Receiver]),
+			error			
+	 end;
+
 message(Receiver, Text, State) ->
 	Find = is_exist(Receiver, State),
 	if
@@ -209,6 +231,7 @@ message(Receiver, Text, State) ->
 			io:format("~p does not exist.~n", [Receiver]),
 			error			
 	 end.
+
 
 send_to_actor(Pid, FullMessage) ->
 	%io:format("Sending message to all: ~p~n", [FullMessage]),

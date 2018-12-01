@@ -82,17 +82,23 @@ class Actor:
             line = speechQ.get()
             if line is None:
                 break
+            if type(line) is not str:
+                line = ''.join(map(chr,line))
             print(f"Actor {self.Id} has picked up line {line}")
-            line = self.parseText(line)
-            self.synthesize_ssml(line)
+            #line = self.parseText(line)
+            #self.synthesize_ssml(line)
 
 
 
 
 def start(actorId):
+    
+    if type(actorId) is not str:
+        print("Not string")
+
+        actorId = ''.join(map(chr,actorId))
+    
     a = Actor(actorId=actorId)
-
-
 
 def enqueue(line):
     speechQ.put(line)
