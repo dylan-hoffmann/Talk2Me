@@ -1,23 +1,23 @@
-BARNARDO. says  Who’s there?
+BARNARDO. Who’s there?
 
-FRANCISCO. says  Nay, answer me. Stand and unfold yourself.
+FRANCISCO. Nay, answer me. Stand and unfold yourself.
 
-BARNARDO. says  Long live the King!
+BARNARDO. Long live the King!
 
-FRANCISCO. says  Barnardo?
+FRANCISCO. Barnardo?
 
-BARNARDO. says  He.
+BARNARDO. He.
 
-FRANCISCO. says  You come most carefully upon your hour.
+FRANCISCO. You come most carefully upon your hour.
 
-BARNARDO. says  ’Tis now struck twelve. Get thee to bed, Francisco.
+BARNARDO. ’Tis now struck twelve. Get thee to bed, Francisco.
 
-FRANCISCO. says  For this relief much thanks. ’Tis bitter cold, And I am sick
+FRANCISCO. For this relief much thanks. ’Tis bitter cold, And I am sick
+at heart.
 
-BARNARDO. says  Have you had quiet guard?
+BARNARDO. Have you had quiet guard?
 
-FRANCISCO. says  Not a mouse stirring.
+FRANCISCO. Not a mouse stirring.
 
-BARNARDO. says  Well, good night. If you do meet Horatio and Marcellus, The
-
-FRANCISCO. says  I think I hear them. Stand, ho! Who is there?
+BARNARDO. Well, good night. If you do meet Horatio and Marcellus, The
+rivals of my watch, bid them make haste.

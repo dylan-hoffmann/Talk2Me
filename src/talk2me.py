@@ -37,6 +37,8 @@ EMBEDDING_DIM = 200  # embedding dimensions for word vectors (word2vec/GloVe)
 p = re.compile("([A-Z]+\.)")
 
 
+manager = threading.Semaphore(0)
+
 # Main driver class, runs most of our other classes
 class Talk2Me:
 
@@ -118,11 +120,17 @@ class Scheduler:
         # print(self.actorQ)
         # self.actorThreads = [Thread()]
 
+
+        global manager
+        self.semaphore = manager
+        self.managerQ = Queue()
+        self.managerThread = threading.Thread(target=self.cue, name="cue", args=[])
         self.erlPid = erlPid
         self.queue = queue
         self.thread = threading.Thread(target=self.run, name="Scheduler",
                                        args=[])
         self.thread.start()
+        self.managerThread.start()
 
     def run(self):
         while True:
@@ -131,11 +139,26 @@ class Scheduler:
             if char in self.actorDict:
                 msg = (char, str(line))
                 cast(self.erlPid, msg)
+                self.managerQ.put(msg)
                 # self.actorDict[char].readLine(line=line)
             # print(f"Scheduler cue'ing {char} with line {line}")
 
-    def cue(self, actorId=None, line=None):
-        pass
+    def cue(self):
+        while True:
+            char, line = self.managerQ.get()
+            print("Queueing")
+            msg = (Atom(b'cue'), char)
+            cast(self.erlPid, msg)
+            print("Locking")
+            self.semaphore.acquire()
+
+
+
+
+def release():
+    print("releasing in Python")
+    global manager
+    manager.release()
 
 
 class Actor:

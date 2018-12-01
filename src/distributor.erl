@@ -11,7 +11,7 @@
 -behavior(gen_server).
 
 % Clients
--export([join/3, receiving/2]).
+-export([join/3, receiving/3, releaseActor/0]).
 % Server
 -export([start_link/0, stop/0, listen/0, start_python/0]).
 -export([init/1, handle_call/3, handle_cast/2, terminate/2]).
@@ -25,12 +25,18 @@
 join(Actor_name, Node_name, Play_name) ->
 	{ok, P1} = python:start([{python_path, "."}, {python, "python3"}]),
 	python:call(P1, actor, start, [Actor_name]),
-	Pid = spawn(distributor, receiving, [Actor_name, P1]),
+	Pid = spawn(distributor, receiving, [Actor_name, P1, Node_name]),
 	rpc:call(Node_name, distributor, join_play, [Actor_name, Pid]),
 	% only parser sends message
 	io:format("~p: joining.~n", [Actor_name]).
 
-receiving(Actor_name, PPid) ->
+releaseActor() ->
+	io:format("Releasing Actor"),
+    python:call('mainboi', talk2me, release, []),
+    ok.
+
+
+receiving(Actor_name, PPid, Node_name) ->
 	receive
 		% Actor_name should match Receiver name
 		{message, Actor_name, Text} ->
@@ -43,13 +49,16 @@ receiving(Actor_name, PPid) ->
 			io:format("Current actors are:~n", []),
 			print(Actors);
 		{cue, Actor}	->
-			io:format("Cuing pt2 ~p:~n", [Actor]);
+			io:format("Cuing pt2 ~p:~n", [Actor]),
+			python:call(PPid, actor, speak, []),
+			rpc:call(Node_name, distributor, releaseActor, []);
 		{notice, Notice} ->
 			io:format("~p~n", [Notice]);
 		_other ->
 			dunno		
 	end,
-	receiving(Actor_name, PPid).
+	receiving(Actor_name, PPid, Node_name).
+
 
 % this function can only be used by the parser
 % parser is like a controller of the whole play
@@ -94,7 +103,8 @@ start_link() ->
 start_python() ->
 	P2 = spawn(distributor, listen, []),
     {ok, P1} = python:start([{python_path, "."}, {python, "python3"}]),
-    python:call(P1, talk2me, start, [P2]),
+    register('mainboi', P1),
+	python:call('mainboi', talk2me, start, [P2]),
 	ok.
 
 
@@ -121,9 +131,9 @@ list_actors(FromPid) ->
 
 listen() ->
     receive
-        {Actor_name, Msg}->  rpc:call(node(), distributor, send_message, [Actor_name, Msg]);
-		{Actor_name}-> io:format("Starting to cue"),
-		rpc:call(node(), distributor, cue, [Actor_name])
+		{cue, Actor_name}-> io:format("Starting to cue"),
+		rpc:call(node(), distributor, cue, [Actor_name]);
+        {Actor_name, Msg}->  rpc:call(node(), distributor, send_message, [Actor_name, Msg])
     end,
 	listen().
 

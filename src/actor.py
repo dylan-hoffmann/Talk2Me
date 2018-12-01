@@ -14,6 +14,7 @@ lineQ = queue.Queue()
 
 class Actor:
 
+    #TODO Pass in Voice Along with Id
     def __init__(self, actorId=None):
         global speechQ
         self.speechQ = speechQ
@@ -51,7 +52,7 @@ class Actor:
         response = client.synthesize_speech(input_text, voice, audio_config)
 
         # The response's audio_content is binary.
-        file = "audio_line" + str(self.lineNum) + ".mp3"
+        file = "audio_line" + str(self.Id) + str(self.lineNum) + ".mp3"
         with open(file, 'wb') as out:
             out.write(response.audio_content)
             print('Audio content written to file', file)
@@ -85,8 +86,8 @@ class Actor:
             if type(line) is not str:
                 line = ''.join(map(chr,line))
             print(f"Actor {self.Id} has picked up line {line}")
-            #line = self.parseText(line)
-            #self.synthesize_ssml(line)
+            line = self.parseText(line)
+            self.synthesize_ssml(line)
 
 
 
@@ -104,5 +105,6 @@ def enqueue(line):
     speechQ.put(line)
 
 def speak():
+    print("Speaking")
     file = lineQ.get()
     playsound(file)

@@ -1,4 +1,4 @@
-import Talk2Me.src.actor as actor
+import actor
 import queue
 import threading
 from time import sleep
