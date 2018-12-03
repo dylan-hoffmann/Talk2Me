@@ -11,7 +11,7 @@
 -behavior(gen_server).
 
 % Clients
--export([join/3, receiving/3, releaseActor/0]).
+-export([join/1, receiving/3, releaseActor/0]).
 % Server
 -export([start_link/0, stop/0, listen/0, start_python/0]).
 -export([init/1, handle_call/3, handle_cast/2, terminate/2]).
@@ -22,13 +22,14 @@
 % Client part
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-join(Actor_name, Node_name, Play_name) ->
+join([Actor_name, Node_name, Voice]) ->
 	{ok, P1} = python:start([{python_path, "."}, {python, "python3"}]),
-	python:call(P1, actor, start, [Actor_name]),
-	Pid = spawn(distributor, receiving, [Actor_name, P1, Node_name]),
-	rpc:call(Node_name, distributor, join_play, [Actor_name, Pid]),
+	Name = atom_to_list(Actor_name),
+	python:call(P1, actor, start, [Name, Voice]),
+	Pid = spawn(distributor, receiving, [Name, P1, Node_name]),
+	rpc:call(Node_name, distributor, join_play, [Name, Pid]),
 	% only parser sends message
-	io:format("~p: joining.~n", [Actor_name]).
+	io:format("~p: joining.~n", [Name]).
 
 releaseActor() ->
 	io:format("Releasing Actor"),

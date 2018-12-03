@@ -12,13 +12,20 @@ speechQ = queue.Queue()
 lineQ = queue.Queue()
 
 
+voiceMap = {'auA':'en-AU-Wavenet-A', 'auB':'en-AU-Wavenet-B', 'auC':'en-AU-Wavenet-C',
+    'auD':'en-AU-Wavenet-D', 'gbA':'en-GB-Wavenet-A','gbB':'en-GB-Wavenet-B', 
+    'gbC':'en-GB-Wavenet-C', 'gbD':'en-GB-Wavenet-D', 'usA':'en-US-Wavenet-A',
+    'usB':'en-US-Wavenet-B', 'usC':'en-US-Wavenet-C', 'usD':'en-US-Wavenet-D',
+    'usE':'en-US-Wavenet-E', 'usF':'en-US-Wavenet-F'}
+
 class Actor:
 
     #TODO Pass in Voice Along with Id
-    def __init__(self, actorId=None):
+    def __init__(self, actorId=None, voice=None):
         global speechQ
         self.speechQ = speechQ
         self.Id = actorId
+        self.voice = voice
         self.lineQ = lineQ
         self.thread = threading.Thread(target=self.run, name="Actor", args=[])
         self.thread.start()
@@ -42,7 +49,7 @@ class Actor:
         voice = texttospeech.types.VoiceSelectionParams(
             language_code='en-US',
             ssml_gender=texttospeech.enums.SsmlVoiceGender.MALE,
-            name='en-AU-Wavenet-B')
+            name=self.voice)
 
         # Set the output and speaking rate
         audio_config = texttospeech.types.AudioConfig(
@@ -92,14 +99,16 @@ class Actor:
 
 
 
-def start(actorId):
+def start(actorId, voice):
     
     if type(actorId) is not str:
         print("Not string")
 
         actorId = ''.join(map(chr,actorId))
-    
-    a = Actor(actorId=actorId)
+    print(voice)
+    voice = ''.join(map(chr,voice))
+    voice = voiceMap[voice]
+    a = Actor(actorId=actorId, voice=voice)
 
 def enqueue(line):
     speechQ.put(line)
