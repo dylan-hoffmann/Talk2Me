@@ -1,23 +1,18 @@
-BARNARDO. Who’s there?
+EFFECT. <audio src"https://actions.google.com/sounds/v1/ambiences/crickets_with_distant_traffic.ogg"/>
 
-FRANCISCO. Nay, answer me. Stand and unfold yourself.
+BARNARDO. Knock Knock.
 
-BARNARDO. Long live the King!
+FRANCISCO. Whose There?
 
-FRANCISCO. Barnardo?
+BARNARDO. You
 
-BARNARDO. He.
+FRANCISCO. You Who
 
-FRANCISCO. You come most carefully upon your hour.
+BARNARDO. You Who is the pun...
 
-BARNARDO. ’Tis now struck twelve. Get thee to bed, Francisco.
+FRANCISCO. Great
 
-FRANCISCO. For this relief much thanks. ’Tis bitter cold, And I am sick
-at heart.
+BARNARDO. Do you mind looking at my UMASM code?
 
-BARNARDO. Have you had quiet guard?
+FRANCISCO. Get on the queue
 
-FRANCISCO. Not a mouse stirring.
-
-BARNARDO. Well, good night. If you do meet Horatio and Marcellus, The
-rivals of my watch, bid them make haste.

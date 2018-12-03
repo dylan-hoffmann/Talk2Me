@@ -11,7 +11,7 @@
 -behavior(gen_server).
 
 % Clients
--export([join/1, receiving/3, releaseActor/0]).
+-export([join/1, receiving/3, releaseActor/1]).
 % Server
 -export([start_link/0, stop/0, listen/0, start_python/0]).
 -export([init/1, handle_call/3, handle_cast/2, terminate/2]).
@@ -31,9 +31,9 @@ join([Actor_name, Node_name, Voice]) ->
 	% only parser sends message
 	io:format("~p: joining.~n", [Name]).
 
-releaseActor() ->
+releaseActor(Actor) ->
 	io:format("Releasing Actor"),
-    python:call('mainboi', talk2me, release, []),
+    python:call('mainboi', talk2me, release, [Actor]),
     ok.
 
 
@@ -52,7 +52,7 @@ receiving(Actor_name, PPid, Node_name) ->
 		{cue, Actor}	->
 			io:format("Cuing pt2 ~p:~n", [Actor]),
 			python:call(PPid, actor, speak, []),
-			rpc:call(Node_name, distributor, releaseActor, []);
+			rpc:call(Node_name, distributor, releaseActor, [Actor_name]);
 		{notice, Notice} ->
 			io:format("~p~n", [Notice]);
 		_other ->

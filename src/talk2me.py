@@ -19,8 +19,7 @@ from keras.preprocessing.sequence import pad_sequences
 from keras.utils.np_utils import to_categorical
 from keras.layers import Embedding
 from keras.layers import Dense, Input, Flatten, Concatenate
-from keras.layers import Conv1D, MaxPooling1D, Embedding, Dropout, LSTM, GRU, \
-    Bidirectional
+from keras.layers import Conv1D, MaxPooling1D, Embedding, Dropout, LSTM, GRU, Bidirectional
 from keras.models import Model
 from keras import backend as K
 from keras.engine.topology import Layer, InputSpec
@@ -35,6 +34,7 @@ EMBEDDING_DIM = 200  # embedding dimensions for word vectors (word2vec/GloVe)
 
 # Regex for matching speaking character
 p = re.compile("([A-Z]+\.)")
+
 
 
 manager = threading.Semaphore(0)
@@ -110,6 +110,16 @@ class Parser:
 class Scheduler:
 
     def __init__(self, actors=[], queue=None, erlPid=None):
+
+        f = open('tokenizer.pickle', 'rb')
+        self.tokenizer = pickle.load(f)
+        K.clear_session()
+        #print(tokenizer)
+        self.classes = ["neutral", "happy", "sad", "hate", "anger"]
+        self.model_test = load_model('checkpoint-1.097.h5')
+        
+        self.model_test._make_predict_function()
+
         self.actors = actors
         self.actorQ = dict([(actor, Queue()) for actor in self.actors])
         self.actorObj = [
@@ -136,29 +146,52 @@ class Scheduler:
         while True:
             time.sleep(0.1)
             char, line = self.queue.get()
+            sent = self.get_sent(line)
+            #print(sent)
             if char in self.actorDict:
                 msg = (char, str(line))
                 cast(self.erlPid, msg)
                 self.managerQ.put(msg)
-                # self.actorDict[char].readLine(line=line)
-            # print(f"Scheduler cue'ing {char} with line {line}")
+
 
     def cue(self):
         while True:
             char, line = self.managerQ.get()
             print("Queueing")
-            msg = (Atom(b'cue'), char)
+            msg = (Atom(b'cue'), char)    
             cast(self.erlPid, msg)
-            print("Locking")
-            self.semaphore.acquire()
+            if char != "EFFECT":  
+                print("Locking")
+                self.semaphore.acquire()
+
+    def get_sent(self, line):
+    
+        #print("At Get Sent")
+        #print(f"line is {line}")
+        parsedL = []
+        parsedL.append(line)
+        #print(tokenizer)
+        sequences_test = self.tokenizer.texts_to_sequences(parsedL)
+        #print(sequences_test)
+        data_int_t = pad_sequences(sequences_test, padding='pre',
+                                    maxlen=(MAX_SEQUENCE_LENGTH - 5))
+        data_test = pad_sequences(data_int_t, padding='post',
+                                    maxlen=MAX_SEQUENCE_LENGTH)
+        #K.clear_session()
+        y_prob = self.model_test.predict(data_test)
+        print(y_prob)
 
 
 
 
-def release():
-    print("releasing in Python")
+def release(Actor):
+    Actor = ''.join(map(chr,Actor))
+    print(f"releasing in Python for actor {Actor}")
+    
     global manager
     manager.release()
+
+
 
 
 class Actor:
@@ -191,30 +224,32 @@ class Sentiment:
 
         self.queue = queue
         self.thread = threading.Thread(target=self.run, name=f"Sentiment Run",
-                                       args=[])
+                                      args=[])
         self.thread.start()
 
     def run(self):
-        with open('tokenizer.pickle', 'rb') as handle:
-            tokenizer = pickle.load(handle)
+        # with open('tokenizer.pickle', 'rb') as handle:
+        #     tokenizer = pickle.load(handle)
 
-        classes = ["neutral", "happy", "sad", "hate", "anger"]
-        model_test = load_model('checkpoint-1.097.h5')
+        
+        # classes = ["neutral", "happy", "sad", "hate", "anger"]
+        # model_test = load_model('checkpoint-1.097.h5')
+        
 
         while True:
             line = self.queue.get()
             # print(line)
-            if line is None:
-                break
-            parsedL = []
-            parsedL.append(line[1])
-            sequences_test = tokenizer.texts_to_sequences(parsedL)
-            # print(sequences_test)
-            data_int_t = pad_sequences(sequences_test, padding='pre',
-                                       maxlen=(MAX_SEQUENCE_LENGTH - 5))
-            data_test = pad_sequences(data_int_t, padding='post',
-                                      maxlen=MAX_SEQUENCE_LENGTH)
-            y_prob = model_test.predict(data_test)
+            # if line is None:
+            #     break
+            # parsedL = []
+            # parsedL.append(line[1])
+            # sequences_test = tokenizer.texts_to_sequences(parsedL)
+            # # print(sequences_test)
+            # data_int_t = pad_sequences(sequences_test, padding='pre',
+            #                            maxlen=(MAX_SEQUENCE_LENGTH - 5))
+            # data_test = pad_sequences(data_int_t, padding='post',
+            #                           maxlen=MAX_SEQUENCE_LENGTH)
+            # y_prob = model_test.predict(data_test)
 
             # print(y_prob)
 
@@ -229,7 +264,7 @@ def start(ErlangPid=None):
               "POLONIUS", "LAERTES", "OPHELIA", "HORATIO", "FORTINBRAS",
               "VOLTEMAND", "CORNELIUS", "ROSENCRANTZ", "GUILDENSTERN",
               "MARCELLUS", "BARNARDO", "FRANCISCO", "OSRIC", "REYNALDO",
-              "FIRST CLOWN", "PRIEST", "LORDS", "FIRST AMBASSADOR"]
+              "FIRST CLOWN", "PRIEST", "LORDS", "FIRST AMBASSADOR", "EFFECT"]
     a = Talk2Me(file=file, actors=actors, erlPid=ErlangPid)
     # while True:
     #     time.sleep(3)
