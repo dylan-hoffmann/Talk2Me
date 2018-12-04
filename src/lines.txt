@@ -1,18 +1,10 @@
-EFFECT. Sound Effect Should Play but we need it to work.
+PLAY_TITLE: Lines
+CHARACTERS:
+BARNARDO
+FRANCISCO
+END
 
-BARNARDO. Knock Knock.
-
-FRANCISCO. Whose There?
-
-BARNARDO. You
-
-FRANCISCO. You Who
-
-BARNARDO. You Who is the pun...
-
-FRANCISCO. Great
-
-BARNARDO. Do you mind looking at my UMASM code?
+BARNARDO. Knock Knock. <audio soundLevel="15db" src="https://actions.google.com/sounds/v1/crowds/battle_cry_high_pitch.ogg">didn't get your MP3 audio file</audio>.
 
 FRANCISCO. Get on the queue
 

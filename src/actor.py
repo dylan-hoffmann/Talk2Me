@@ -111,7 +111,8 @@ def start(actorId, voice):
     a = Actor(actorId=actorId, voice=voice)
 
 def enqueue(line):
-    speechQ.put(line)
+    print(f"line is {line}")
+    speechQ.put(line[0])
 
 def speak():
     print("Speaking")

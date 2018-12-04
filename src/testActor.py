@@ -20,7 +20,7 @@ def sayLines():
         sleep(random.random())
 
 
-actor.start("Hamlet")
+actor.start("Hamlet", b'auB')
 lineQ = []
 with open("lines.txt") as f:
     for line in f:

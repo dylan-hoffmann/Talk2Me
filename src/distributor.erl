@@ -105,7 +105,8 @@ start_python() ->
 	P2 = spawn(distributor, listen, []),
     {ok, P1} = python:start([{python_path, "."}, {python, "python3"}]),
     register('mainboi', P1),
-	python:call('mainboi', talk2me, start, [P2]),
+	Play_name = io:get_line("Please Input Play Name: "),
+	python:call('mainboi', talk2me, start, [P2, Play_name]),
 	ok.
 
 

@@ -127,9 +127,6 @@ class Scheduler:
             in range(len(actors))]
         self.actorDict = {self.actors[i]: self.actorObj[i] for i in
                           range(len(self.actors))}
-        # print(self.actorQ)
-        # self.actorThreads = [Thread()]
-
 
         global manager
         self.semaphore = manager
@@ -149,7 +146,9 @@ class Scheduler:
             sent = self.get_sent(line)
             #print(sent)
             if char in self.actorDict:
-                msg = (char, str(line))
+                line = (line, sent[0])
+                msg = (char, line)
+                print(msg)
                 cast(self.erlPid, msg)
                 self.managerQ.put(msg)
 
@@ -180,6 +179,7 @@ class Scheduler:
         #K.clear_session()
         y_prob = self.model_test.predict(data_test)
         print(y_prob)
+        return y_prob
 
 
 
@@ -255,23 +255,35 @@ class Sentiment:
             # print(y_prob)
 
 
-def start(ErlangPid=None):
+def start(ErlangPid=None, PlayName=None):
     print("Here")
 
     print(f"Erlang PiD {ErlangPid}")
-    file = open("lines.txt", 'r')
+    PlayName = ''.join(map(chr,PlayName))
+    PlayName = PlayName[:len(PlayName)-1]
 
-    actors = ["NARRATOR", "KING", "QUEEN", "HAMLET", "CLAUDIUS", "GHOST",
-              "POLONIUS", "LAERTES", "OPHELIA", "HORATIO", "FORTINBRAS",
-              "VOLTEMAND", "CORNELIUS", "ROSENCRANTZ", "GUILDENSTERN",
-              "MARCELLUS", "BARNARDO", "FRANCISCO", "OSRIC", "REYNALDO",
-              "FIRST CLOWN", "PRIEST", "LORDS", "FIRST AMBASSADOR", "EFFECT"]
+    file = open(PlayName, 'r')
+
+    actors = []
+    line = ""
+    actorRead = False
+    for line in file:
+        if line == "END\n":
+            break
+        if len(line) > 11 and line[:12] == "PLAY_TITLE: ":
+            print(f"Preparing to Read {line[12:]}")
+        
+        if actorRead == True:
+            #print(f"Actor {line} added to List")
+            actors.append(line[:len(line)-1])
+
+        if line == "CHARACTERS:\n":
+            actorRead = True
+
+    print(f"Total Detected Actors {actors}")
+    # actors = ["NARRATOR", "KING", "QUEEN", "HAMLET", "CLAUDIUS", "GHOST",
+    #           "POLONIUS", "LAERTES", "OPHELIA", "HORATIO", "FORTINBRAS",
+    #           "VOLTEMAND", "CORNELIUS", "ROSENCRANTZ", "GUILDENSTERN",
+    #           "MARCELLUS", "BARNARDO", "FRANCISCO", "OSRIC", "REYNALDO",
+    #           "FIRST CLOWN", "PRIEST", "LORDS", "FIRST AMBASSADOR", "EFFECT"]
     a = Talk2Me(file=file, actors=actors, erlPid=ErlangPid)
-    # while True:
-    #     time.sleep(3)
-
-    #     cast(ErlangPid, "Hello There")
-
-    # return Atom(b"ok")
-
-    # eturn "Hello World"
