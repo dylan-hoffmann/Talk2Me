@@ -189,7 +189,8 @@ def release(Actor):
     print(f"releasing in Python for actor {Actor}")
     
     global manager
-    manager.release()
+    if Actor != "EFFECT":
+        manager.release()
 
 
 
