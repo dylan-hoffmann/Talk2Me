@@ -1,0 +1,9 @@
+PLAY_TITLE: Lines
+CHARACTERS:
+BARNARDO
+FRANCISCO
+END
+
+BARNARDO. Knock Knock. <audio soundLevel="15db" src="https://actions.google.com/sounds/v1/crowds/battle_cry_high_pitch.ogg">didn't get your MP3 audio file</audio>.
+
+FRANCISCO and BARNARDO. Get on the queue
