@@ -1,5 +1,3 @@
-######!/usr/bin/env python3
-
 import sys
 import time
 import queue
@@ -12,6 +10,7 @@ speechQ = queue.Queue()
 lineQ = queue.Queue()
 
 
+# Possible list of available voices for actors
 voiceMap = {'auA':'en-AU-Wavenet-A', 'auB':'en-AU-Wavenet-B', 'auC':'en-AU-Wavenet-C',
     'auD':'en-AU-Wavenet-D', 'gbA':'en-GB-Wavenet-A','gbB':'en-GB-Wavenet-B', 
     'gbC':'en-GB-Wavenet-C', 'gbD':'en-GB-Wavenet-D', 'usA':'en-US-Wavenet-A',
@@ -19,9 +18,18 @@ voiceMap = {'auA':'en-AU-Wavenet-A', 'auB':'en-AU-Wavenet-B', 'auC':'en-AU-Waven
     'usE':'en-US-Wavenet-E', 'usF':'en-US-Wavenet-F'}
 
 class Actor:
+    """ An actor for a given play that is designed
+    to speak mp3 sound files of lines.
+    """
 
-    #TODO Pass in Voice Along with Id
     def __init__(self, actorId=None, voice=None):
+        """ Initializer for an actor
+
+            Args:
+                actorId: The string name of the actor
+                voice: The voice associated with the actor
+
+        """
         global speechQ
         self.speechQ = speechQ
         self.Id = actorId
@@ -69,6 +77,9 @@ class Actor:
 
 
     def parseText(self, text):
+        """ Further parsing done to ensure
+        proper breaks in speech given a line
+        """
         line = ""
         sentiment = 1
         for word in text.split():
@@ -86,6 +97,9 @@ class Actor:
         return line
 
     def run(self):
+        """ Listening process
+        for an actor.
+        """
         while True:
             line = speechQ.get()
             if line is None:
@@ -100,21 +114,32 @@ class Actor:
 
 
 def start(actorId, voice):
+    """ Starts an instance of an actor
+
+        Args: 
+            actorId: A string associated name for the actor
+            voice: Wavenet voice for the actor
+
+    """
     
     if type(actorId) is not str:
         print("Not string")
-
-        actorId = ''.join(map(chr,actorId))
-    print(voice)
+        actorId = ''.join(map(chr,actorId)) # Erlang message formatting
+    
     voice = ''.join(map(chr,voice))
     voice = voiceMap[voice]
     a = Actor(actorId=actorId, voice=voice)
 
+
 def enqueue(line):
+    """ Enqueues a line for an actor"""
     print(f"line is {line}")
     speechQ.put(line[0])
 
 def speak():
+    """ Cues an actor to speak the next
+    line
+    """
     print("Speaking")
     file = lineQ.get()
     playsound(file)

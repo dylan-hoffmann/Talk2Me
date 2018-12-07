@@ -27,6 +27,9 @@ from keras.engine.topology import Layer, InputSpec
 from erlport.erlterms import Atom
 from erlport.erlang import set_message_handler, cast
 
+
+# The global constants below are designed for sentiment analysis
+
 MAX_NB_WORDS = 40000  # max no. of words for tokenizer
 MAX_SEQUENCE_LENGTH = 30  # max length of text (words) including padding
 VALIDATION_SPLIT = 0.2
@@ -39,10 +42,26 @@ p = re.compile("([A-Z]+\.)")
 
 manager = threading.Semaphore(0)
 
-# Main driver class, runs most of our other classes
+
 class Talk2Me:
+        """ Main driver class, runs most of our other classes
+        and provides setup for the producer consumer model
+
+        """
 
     def __init__(self, actors=[], file=None, erlPid=None):
+        """ Initializes Assisting Classes for Program Functionality
+
+            Args:
+                actors: A str list of actors in the play
+                file: An open file where the file pointer is at the 
+                    start of lines
+                erlPid: Erlang PID for communication.
+
+            Returns:
+                None
+        """
+
         self.actors = actors
         self.erlPid = erlPid
         self.queue = Queue()
@@ -51,23 +70,32 @@ class Talk2Me:
                              sentQ=self.sentQ)
         self.scheduler = Scheduler(actors=self.actors, queue=self.queue,
                                    erlPid=erlPid)
-        self.sentiment = Sentiment(self.sentQ)
-
-    def run(self):
-        pass
 
 
-# This class parses the text file and sends each line to the scheduler
-# and sentiment analyzer
+
 class Parser:
+    """ Parser extracts an Actor Name and associated line
+    to send to scheduler.
+    """
 
     def __init__(self, actors=[], queue=None, file=None, sentQ=None):
+        """ Initializer for Parser
+
+            Args:
+                actors: A str list of actors in the play
+                file: An open file where the file pointer is at the 
+                    start of lines
+                sentQ: A shared Queue between the scheduler and parser
+
+            Returns:
+                None
+
+        """
         if actors is None:
             actors = []
         self.actors = actors  # List of all actors
         self.queue = queue  # Queue between Parser and Scheduler
-        self.file = file  # Script
-        self.sentQ = sentQ  # Queue between Parser and Sentiment Analysis
+        self.file = file  # Script 
         # Thread in which the parser runs - allows for concurrent parsing
         # and scheduling
         self.thread = threading.Thread(target=self.readFile,
@@ -75,6 +103,9 @@ class Parser:
         self.thread.start()
 
     def readFile(self):
+        """ Parses lines in file and
+        Enqueues lines to scheduler. 
+        """
 
         last = ""
         char = ""
@@ -92,45 +123,56 @@ class Parser:
                         last = line
                         start = 0
                     self.queue.put((char, line[end:]))
-                    self.sentQ.put((char, line[end:]))
-                    # print(f"{line[start:end]}")
+
 
             if line[0] == " " and j == 0:
+                # If Stage direction is given, line
+                # is given to the NARRATOR
                 self.queue.put(('NARRATOR', line))
                 self.sentQ.put(('NARRATOR', line))
             elif j == 0 and line != "\n":
                 last = last + line
 
                 self.queue.put((char, line))
-                self.sentQ.put((char, line))
 
 
-# This class gets actor:line pairs from the queue and distributes them
-# to the appropriate actor
+
+
 class Scheduler:
+   
+    """ This class gets actor:line pairs from the queue and distributes them
+    to the appropriate actor
+    """
 
     def __init__(self, actors=[], queue=None, erlPid=None):
+        """ Initializer for the scheduler
 
+            Args:
+                actors: A str list of actors in the play
+                file: An open file where the file pointer is at the 
+                    start of lines
+                erlPid: Erlang Pid to communicate with server
+
+            Returns:
+                None
+        """
+
+        global manager
+
+        # Open our word tokenizer
         f = open('tokenizer.pickle', 'rb')
         self.tokenizer = pickle.load(f)
         K.clear_session()
-        #print(tokenizer)
         self.classes = ["neutral", "happy", "sad", "hate", "anger"]
         self.model_test = load_model('checkpoint-1.097.h5')
         
         self.model_test._make_predict_function()
 
         self.actors = actors
-        self.actorQ = dict([(actor, Queue()) for actor in self.actors])
-        self.actorObj = [
-            Actor(name=self.actors[i], queue=self.actorQ[self.actors[i]]) for i
-            in range(len(actors))]
-        self.actorDict = {self.actors[i]: self.actorObj[i] for i in
-                          range(len(self.actors))}
-
-        global manager
         self.semaphore = manager
         self.managerQ = Queue()
+
+        # Thread for Synchronizer 
         self.managerThread = threading.Thread(target=self.cue, name="cue", args=[])
         self.erlPid = erlPid
         self.queue = queue
@@ -140,20 +182,26 @@ class Scheduler:
         self.managerThread.start()
 
     def run(self):
+        """ Main running loop for 
+        scheduler. Start the scheduling
+        process by sending lines out to 
+        Erlang distribution
+        """
         while True:
             time.sleep(0.1)
             char, line = self.queue.get()
             sent = self.get_sent(line)
-            #print(sent)
             if char in self.actorDict:
                 line = (line, sent[0])
                 msg = (char, line)
-                print(msg)
                 cast(self.erlPid, msg)
                 self.managerQ.put(msg)
 
 
     def cue(self):
+        """ Synchronizer for speech
+        timing between actors.
+        """
         while True:
             char, line = self.managerQ.get()
             print("Queueing")
@@ -164,102 +212,54 @@ class Scheduler:
                 self.semaphore.acquire()
 
     def get_sent(self, line):
-    
-        #print("At Get Sent")
-        #print(f"line is {line}")
+        """ Given an input line runs sentiment
+        analysis model to determine the relative
+        Neutrality, Happiness, Angriness, Sadness
+        and Hate of speech
+        """
+        
         parsedL = []
         parsedL.append(line)
-        #print(tokenizer)
         sequences_test = self.tokenizer.texts_to_sequences(parsedL)
-        #print(sequences_test)
+
         data_int_t = pad_sequences(sequences_test, padding='pre',
                                     maxlen=(MAX_SEQUENCE_LENGTH - 5))
         data_test = pad_sequences(data_int_t, padding='post',
                                     maxlen=MAX_SEQUENCE_LENGTH)
-        #K.clear_session()
+
         y_prob = self.model_test.predict(data_test)
-        print(y_prob)
         return y_prob
 
 
 
 
 def release(Actor):
-    Actor = ''.join(map(chr,Actor))
-    print(f"releasing in Python for actor {Actor}")
-    
+    """ Releases global synchronizer
+    lock given the condition that the 
+    actor is not EFFECT
+    """
     global manager
+    Actor = ''.join(map(chr,Actor))
+
     if Actor != "EFFECT":
         manager.release()
 
 
 
-
-class Actor:
-
-    def __init__(self, name="", voice=None, queue=None):
-        self.name = name
-        self.voice = voice
-        self.queue = queue
-
-    def __repr__(self):
-        return f"actor {self.name}"
-
-    def readLine(self, line=" "):
-        # print(f"{self.name}: {line} in voice {self.voice}")
-        pass
-
-    def run(self):
-
-        while True:
-
-            line = self.queue.get()
-            if line is None:
-                break
-            self.readLine(line=line)
-
-
-class Sentiment:
-
-    def __init__(self, queue):
-
-        self.queue = queue
-        self.thread = threading.Thread(target=self.run, name=f"Sentiment Run",
-                                      args=[])
-        self.thread.start()
-
-    def run(self):
-        # with open('tokenizer.pickle', 'rb') as handle:
-        #     tokenizer = pickle.load(handle)
-
-        
-        # classes = ["neutral", "happy", "sad", "hate", "anger"]
-        # model_test = load_model('checkpoint-1.097.h5')
-        
-
-        while True:
-            line = self.queue.get()
-            # print(line)
-            # if line is None:
-            #     break
-            # parsedL = []
-            # parsedL.append(line[1])
-            # sequences_test = tokenizer.texts_to_sequences(parsedL)
-            # # print(sequences_test)
-            # data_int_t = pad_sequences(sequences_test, padding='pre',
-            #                            maxlen=(MAX_SEQUENCE_LENGTH - 5))
-            # data_test = pad_sequences(data_int_t, padding='post',
-            #                           maxlen=MAX_SEQUENCE_LENGTH)
-            # y_prob = model_test.predict(data_test)
-
-            # print(y_prob)
-
-
 def start(ErlangPid=None, PlayName=None):
-    print("Here")
 
-    print(f"Erlang PiD {ErlangPid}")
-    PlayName = ''.join(map(chr,PlayName))
+    """Starts an Instance Talk2Me For a Play and Erlang PID
+
+    Args:
+        ErlangPid: A valid Erlang PID to send messages to.
+        PlayName: File name of the associated play.
+
+    Returns:
+        None
+
+    """
+
+    PlayName = ''.join(map(chr,PlayName)) # Erlport Message Formatting
     PlayName = PlayName[:len(PlayName)-1]
 
     file = open(PlayName, 'r')
@@ -267,6 +267,7 @@ def start(ErlangPid=None, PlayName=None):
     actors = []
     line = ""
     actorRead = False
+    # Preproccessing for Character Detection
     for line in file:
         if line == "END\n":
             break
@@ -274,16 +275,10 @@ def start(ErlangPid=None, PlayName=None):
             print(f"Preparing to Read {line[12:]}")
         
         if actorRead == True:
-            #print(f"Actor {line} added to List")
             actors.append(line[:len(line)-1])
 
         if line == "CHARACTERS:\n":
             actorRead = True
 
     print(f"Total Detected Actors {actors}")
-    # actors = ["NARRATOR", "KING", "QUEEN", "HAMLET", "CLAUDIUS", "GHOST",
-    #           "POLONIUS", "LAERTES", "OPHELIA", "HORATIO", "FORTINBRAS",
-    #           "VOLTEMAND", "CORNELIUS", "ROSENCRANTZ", "GUILDENSTERN",
-    #           "MARCELLUS", "BARNARDO", "FRANCISCO", "OSRIC", "REYNALDO",
-    #           "FIRST CLOWN", "PRIEST", "LORDS", "FIRST AMBASSADOR", "EFFECT"]
     a = Talk2Me(file=file, actors=actors, erlPid=ErlangPid)

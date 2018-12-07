@@ -61,29 +61,6 @@ receiving(Actor_name, PPid, Node_name) ->
 	receiving(Actor_name, PPid, Node_name).
 
 
-% this function can only be used by the parser
-% parser is like a controller of the whole play
-% sending()
-% 	receive
-% 		{Actor_name, Text} ->
-% 			io:format("~p ~p, ~n", [Actor_Name, Text]),
-% 			case {Actor_name, Text} of
-% 				{Actor_name, "--remove"} ->
-% 					% the play ends
-% 					rpc:call(Node_name, distributor, leave_play, [Actor_name]),
-% 					sending(parser, Node_name, Play_name, Pid);
-% 				{Actor_name, "--quit"} ->
-% 					rpc:call(Node_name, distributor, stop, []),
-% 					ok;
-% 				{_, "--list"} ->
-% 					rpc:call(Node_name, distributor, list_actors, [Pid]),
-% 					sending(parser, Node_name, Play_name, Pid);
-% 				_Other ->
-% 					rpc:call(Node_name, distributor, send_message, [Actor_name, Text]),
-% 					sending(parser, Node_name, Play_name, Pid)
-% 			end,	
-% 	end.
-
 
 % print the names of all actors
 print([]) -> ok;
