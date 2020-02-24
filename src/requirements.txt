@@ -6,7 +6,7 @@ astor==0.7.1
 backcall==0.1.0
 beautifulsoup4==4.6.3
 bitarray==0.8.3
-bleach==3.0.2
+bleach==3.1.1
 Brlapi==0.6.6
 bs4==0.0.1
 cachetools==3.0.0
