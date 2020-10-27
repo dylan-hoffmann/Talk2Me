@@ -17,7 +17,7 @@ Click==7.0
 clickclick==1.2.2
 command-not-found==0.3
 connexion==1.5.3
-cryptography==2.1.4
+cryptography==3.2
 cupshelpers==1.0
 cycler==0.10.0
 decorator==4.3.0
