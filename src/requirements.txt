@@ -30,7 +30,7 @@ django-bootstrap3==10.0.1
 entrypoints==0.2.3
 erlport==0.6
 Flask==1.0.2
-Flask-Cors==3.0.6
+Flask-Cors==3.0.9
 gast==0.2.0
 google-api-core==1.5.2
 google-auth==1.6.1
