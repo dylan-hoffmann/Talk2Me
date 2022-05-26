@@ -141,7 +141,7 @@ system-service==0.3
 systemd-python==234
 temp==2018.11.20
 tensorboard==1.11.0
-tensorflow==1.11.0
+tensorflow==2.7.2
 termcolor==1.1.0
 terminado==0.8.1
 testpath==0.4.2
